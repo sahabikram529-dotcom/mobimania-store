@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09060f" />
+  <meta name="description" content="Mobi Mania — great deals on quality second-hand smartphones, easy booking, cart and exchange options." />
+  <title>MOBI MANIA| Pre-loved Phones, Better Prices</title>
+  <style>
+    :root{--ink:#f5f0ff;--muted:#b7accb;--paper:#100b18;--card:#1b1425;--brand:#a855f7;--brand-dark:#7e22ce;--lime:#c084fc;--orange:#f0abfc;--line:#382747;--success:#4ade80;--shadow:0 14px 38px rgba(0,0,0,.32);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body.locked{overflow:hidden}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{max-width:100%}[hidden]{display:none!important}.wrap{width:min(1180px,92%);margin-inline:auto}.hide{display:none!important}
+    .announcement{padding:9px 0;background:#100b18;color:#ff3030;text-align:left;font-size:.82rem;letter-spacing:.15px;overflow:hidden;white-space:nowrap}.announcement-track{display:inline-block;width:max-content;padding-left:100%;will-change:transform;animation:announcement-slide 30s ease-in-out infinite alternate}.announcement strong{color:#ff3030}@keyframes announcement-slide{0%{transform:translateX(0)}100%{transform:translateX(-50%)}} 
+    @media(prefers-reduced-motion:reduce){.announcement-track{animation-duration:120s}}
+    .scroll-reveal{opacity:0;transform:translate3d(0,42px,0) scale(.975);filter:blur(3px);transition:opacity .85s ease,transform .85s cubic-bezier(.16,1,.3,1),filter .85s ease;transition-delay:var(--reveal-delay,0ms);will-change:opacity,transform,filter}
+    .scroll-reveal.is-visible{opacity:1;transform:translate3d(0,0,0) scale(1);filter:blur(0)}
+    .brand-tile .brand-logo{animation:brand-logo-drift 3.2s ease-in-out infinite alternate;will-change:transform}
+    .brand-tile:nth-child(2n) .brand-logo{animation-delay:-1.6s}.brand-tile:nth-child(3n) .brand-logo{animation-delay:-.8s}
+    @keyframes brand-logo-drift{from{transform:translateX(-5px)}to{transform:translateX(5px)}}
+    @media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;filter:none;transition:none}.brand-tile .brand-logo{animation:none}}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.93);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;gap:20px}.logo{display:inline-flex;align-items:center;gap:10px;font-weight:950;font-size:1.3rem;letter-spacing:-.7px;white-space:nowrap}.logo-mark{width:43px;height:43px;display:grid;place-items:center;border-radius:15px;color:#fff;background:linear-gradient(140deg,#8d76ff,#5842e6);box-shadow:0 9px 20px #6954f544}.logo-mark svg{width:27px;height:27px}.navlinks{display:flex;align-items:center;gap:22px;margin-left:auto;font-size:.91rem;font-weight:750}.navlinks a{transition:color .2s}.navlinks a:hover{color:var(--brand)}.nav-actions{display:flex;gap:8px;align-items:center}.nav-btn{position:relative;border:1px solid var(--line);background:#fff;border-radius:13px;padding:10px 12px;font-weight:800;color:var(--ink)}.nav-btn:hover{border-color:#c7befb}.shop-logo-image{width:46px;height:46px;object-fit:contain;border-radius:10px}.top-search-row{padding:0 0 12px}.top-search{max-width:520px;margin-left:auto;margin-right:auto}.top-search input{height:42px}.count{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border-radius:99px;background:var(--brand);color:#fff;font-size:.72rem;margin-left:3px}.hamburger{display:none;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:13px;padding:13px 18px;font-weight:850;transition:transform .2s,box-shadow .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--brand);color:#fff;box-shadow:0 9px 22px #6954f532}.btn-primary:hover{background:var(--brand-dark)}.btn-dark{background:var(--ink);color:#fff}.btn-light{background:#fff;color:var(--ink)}.btn-outline{background:#fff;border:1px solid var(--line);color:var(--ink)}.btn-lime{background:var(--lime);color:var(--ink)}.btn-small{padding:9px 12px;border-radius:10px;font-size:.86rem}.full{width:100%}
+    .hero{padding:35px 0 23px}.hero-card{position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;min-height:370px;border-radius:30px;background:radial-gradient(circle at 80% 18%,#6254a5 0,transparent 27%),linear-gradient(115deg,#11152b,#292153 57%,#5943d8);color:white;box-shadow:var(--shadow)}.hero-copy{position:relative;z-index:2;padding:clamp(28px,5.4vw,65px)}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff36;background:#ffffff13;padding:7px 12px;border-radius:99px;font-weight:850;font-size:.77rem;letter-spacing:.45px}.hero h1{font-size:clamp(2.45rem,5.4vw,4.4rem);line-height:.99;letter-spacing:-2.6px;margin:19px 0 16px;max-width:630px}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{max-width:490px;color:#e0def4;line-height:1.7;margin:0 0 24px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.hero-trust{display:flex;gap:15px;flex-wrap:wrap;margin-top:25px;font-size:.8rem;color:#e4e0ff}.hero-trust span{display:flex;gap:6px;align-items:center}.hero-art{min-height:330px;display:grid;place-items:center;position:relative}.hero-glow{position:absolute;width:280px;height:280px;border-radius:50%;background:#a98cff;filter:blur(78px);opacity:.44}.hero-phone{position:relative;width:185px;height:326px;border:7px solid #e0e1ee;border-radius:35px;background:linear-gradient(155deg,#c3ffac,#59c7ce 46%,#7860ee);transform:rotate(10deg);box-shadow:0 28px 60px #08091b91;display:grid;place-items:center;z-index:2}.hero-phone:before{content:"";position:absolute;top:8px;width:68px;height:15px;border-radius:99px;background:#15182b}.hero-phone:after{content:"M";font-size:6.7rem;color:#ffffffb8;font-weight:1000;text-shadow:0 6px 24px #4036b488}.float-tag{position:absolute;z-index:3;display:flex;flex-direction:column;gap:2px;padding:12px 15px;background:#fff;color:var(--ink);border-radius:16px;box-shadow:0 12px 30px #07091e52;transform:rotate(-5deg)}.float-tag strong{font-size:1.25rem}.float-tag span{font-size:.75rem;color:var(--muted)}.tag-one{top:64px;right:18px}.tag-two{bottom:57px;left:20px;transform:rotate(5deg)}
+    .section{padding:31px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:19px}.section-head h2{font-size:clamp(1.48rem,3vw,2.05rem);letter-spacing:-.9px;margin:0 0 6px}.section-head p{margin:0;color:var(--muted);font-size:.93rem;line-height:1.55}.link{color:var(--brand);font-weight:850;white-space:nowrap}.link:hover{text-decoration:underline}
+    .offer-layout{display:grid;grid-template-columns:1fr;gap:20px;align-items:stretch}.offer-player,.offer-promo{position:relative;border-radius:23px;overflow:hidden}.offer-player{position:relative;width:100%;aspect-ratio:19 / 6;min-height:0;background:#15152c;display:grid;place-items:center}.offer-player video{display:block;width:100%;height:100%;min-height:0;max-height:none;aspect-ratio:19 / 6;object-fit:contain;background:#15152c}.video-empty{width:100%;height:100%;min-height:250px;padding:25px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;background:radial-gradient(circle at 70% 20%,#6c54f8 0,transparent 35%),linear-gradient(140deg,#15162e,#30255e)}.video-play{display:grid;place-items:center;width:58px;height:58px;background:var(--lime);color:var(--ink);border-radius:50%;font-size:1.25rem;margin-bottom:13px}.video-empty h3{font-size:1.8rem;margin:0 0 7px}.video-empty p{color:#dfdcf5;margin:0 0 16px;font-size:.9rem}.repo-video-note{font-size:.78rem!important;opacity:.85;margin-top:10px!important}.offer-promo{padding:29px;display:flex;flex-direction:column;justify-content:center;background:var(--lime)}.offer-promo .eyebrow{background:#17203a0b;border-color:#17203a25;color:#242b32}.offer-promo h3{font-size:clamp(1.55rem,3vw,2.2rem);line-height:1.12;letter-spacing:-.9px;margin:16px 0 11px}.offer-promo p{color:#38414a;line-height:1.65;margin:0 0 19px}.fineprint{font-size:.75rem;color:var(--muted);line-height:1.55}
+    .brand-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}.brand-tile{border:1px solid var(--line);background:#fff;border-radius:18px;padding:16px 7px;display:flex;flex-direction:column;align-items:center;gap:9px;transition:transform .24s,border-color .24s,box-shadow .24s;box-shadow:0 5px 18px #10182805}.brand-tile:hover,.brand-tile.active{transform:translateY(-5px);border-color:#b5a9ff;box-shadow:0 12px 25px #6954f51a}.brand-logo-wrap{width:58px;height:48px;display:grid;place-items:center;border-radius:13px;background:#fff}.brand-logo{display:block;width:46px;height:42px;object-fit:contain}.brand-tile:nth-child(5) .brand-logo-wrap{background:#FFC915}.brand-tile:nth-child(5) .brand-logo{width:52px;height:38px}.brand-tile:nth-child(2) .brand-logo{width:55px}.brand-tile:nth-child(3) .brand-logo{width:40px}.brand-tile:nth-child(4) .brand-logo{width:42px}.brand-tile:nth-child(5) .brand-logo{width:43px}.brand-tile:nth-child(6) .brand-logo{width:40px}.brand-tile:nth-child(7) .brand-logo{width:48px}.brand-tile:nth-child(8) .brand-logo{width:49px}.brand-tile span:last-child{font-size:.82rem;font-weight:850}
+    .catalog-tools{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-bottom:18px}.search{position:relative;flex:1;min-width:200px}.search input{width:100%;border:1px solid var(--line);background:#fff;border-radius:13px;padding:12px 14px 12px 41px;outline:none}.search input:focus,.field input:focus,.field select:focus,.field textarea:focus{border-color:#9989ff;box-shadow:0 0 0 3px #6954f51a}.search:before{content:"⌕";position:absolute;left:14px;top:5px;font-size:1.6rem;color:var(--muted)}.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}.filter-chip{border:1px solid var(--line);background:#fff;border-radius:99px;padding:8px 13px;font-size:.83rem;font-weight:800}.filter-chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.product-card{min-width:0;position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .23s,box-shadow .23s;box-shadow:0 5px 20px #11152b06}.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.product-visual{height:200px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(145deg,#f0edff,#f8f7ff);cursor:pointer}.product-visual img{height:100%;width:100%;padding:12px;object-fit:contain;transition:transform .3s}.product-card:hover .product-visual img{transform:scale(1.045)}.discount-badge{position:absolute;left:11px;top:11px;background:#fff0d8;color:#a65300;border-radius:9px;padding:6px 8px;font-size:.76rem;font-weight:950}.condition-badge{position:absolute;right:10px;top:11px;background:#ffffffdf;color:#4f576b;border-radius:9px;padding:6px 8px;font-size:.7rem;font-weight:850}.product-body{padding:14px}.product-brand{font-size:.73rem;text-transform:uppercase;letter-spacing:.7px;font-weight:900;color:var(--brand)}.product-title{font-size:1rem;line-height:1.35;margin:5px 0 5px;font-weight:900}.product-mini{color:var(--muted);font-size:.79rem;margin:0 0 12px}.price-row{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}.price{font-size:1.15rem;font-weight:1000;letter-spacing:-.4px}.old-price{font-size:.82rem;color:#8b91a3;text-decoration:line-through}.card-actions{display:flex;gap:7px;margin-top:13px}.card-actions .btn{flex:1;padding:10px 8px;font-size:.79rem}.empty-state{background:#fff;border:1px dashed #cdd0dc;border-radius:18px;text-align:center;padding:40px 20px;color:var(--muted);grid-column:1/-1}.empty-state h3{color:var(--ink);margin:0 0 7px}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.trust-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.trust-icon{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#efebff;font-size:1.25rem;margin-bottom:12px}.trust-card h3{font-size:1rem;margin:0 0 6px}.trust-card p{color:var(--muted);font-size:.85rem;line-height:1.6;margin:0}
+    .exchange-box{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:center;background:linear-gradient(115deg,#171b35,#2e245e);color:white;border-radius:27px;padding:clamp(25px,4vw,43px);overflow:hidden}.exchange-copy h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-1.3px;line-height:1.07;margin:15px 0}.exchange-copy p{color:#dcd9f2;line-height:1.7}.exchange-list{display:grid;gap:10px;margin-top:19px;color:#eeeaff;font-size:.9rem}.exchange-form-card{background:#fff;color:var(--ink);border-radius:20px;padding:22px}.exchange-form-card h3{margin:0 0 6px}.exchange-form-card>p{color:var(--muted);font-size:.85rem;margin:0 0 17px}
+    .field{display:grid;gap:6px;margin-bottom:13px}.field label{font-size:.82rem;font-weight:850}.field input,.field select,.field textarea{width:100%;border:1px solid #dfe2eb;border-radius:11px;padding:11px 12px;background:#fff;outline:none;color:var(--ink)}.field textarea{resize:vertical;min-height:85px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.estimate-result{margin-top:13px;padding:13px;border-radius:12px;background:#effbf3;border:1px solid #ceefd8;color:#146b3b;font-size:.9rem;line-height:1.5}.estimate-result strong{font-size:1.1rem}
+    footer{margin-top:40px;background:#11152b;color:#fff;padding:39px 0 23px}.map-frame{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}.map-frame iframe{display:block;width:100%;height:340px;border:0}@media(max-width:760px){.map-frame iframe{height:270px}}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-brand p,.footer-col a,.footer-col p{color:#b9bfd3;font-size:.86rem;line-height:1.7}.footer-brand p{max-width:360px}.footer-col h3{font-size:.92rem;margin:3px 0 12px}.footer-col a{display:block;margin:5px 0}.footer-col a:hover{color:var(--lime)}.footer-bottom{border-top:1px solid #ffffff20;margin-top:25px;padding-top:16px;display:flex;justify-content:space-between;gap:15px;color:#a7aec5;font-size:.78rem}.disclaimer{font-size:.75rem;color:#aeb4c9;line-height:1.55;max-width:780px;margin-top:12px}
+    .overlay{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;background:#0a0d1dc9;padding:17px;overflow:auto}.overlay.open{display:flex}.dialog{position:relative;background:#fff;color:var(--ink);border-radius:22px;width:min(610px,100%);max-height:92vh;overflow:auto;box-shadow:0 30px 80px #0005;animation:pop .18s ease-out}.dialog.wide{width:min(900px,100%)}@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}.dialog-head{padding:20px 22px 13px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:start;justify-content:space-between}.dialog-head h2{margin:0;font-size:1.3rem;letter-spacing:-.5px}.dialog-head p{color:var(--muted);font-size:.84rem;margin:5px 0 0;line-height:1.5}.close-btn{border:1px solid var(--line);background:#fff;width:35px;height:35px;flex:0 0 auto;border-radius:11px;font-size:1.25rem}.dialog-content{padding:20px 22px 23px}.dialog-footnote{font-size:.77rem;color:var(--muted);line-height:1.55;margin-top:12px}.tabs{display:flex;gap:8px;background:#f2f3f8;padding:5px;border-radius:12px;margin-bottom:18px}.tab{border:0;background:transparent;border-radius:9px;padding:10px;flex:1;font-weight:850;color:var(--muted)}.tab.active{background:#fff;color:var(--ink);box-shadow:0 2px 6px #11152b12}.product-detail{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px}.detail-image{background:linear-gradient(145deg,#f0edff,#f9f8ff);border-radius:18px;min-height:300px;display:grid;place-items:center;overflow:hidden}.detail-image img{width:100%;height:100%;max-height:420px;object-fit:contain;padding:20px}.detail-info h2{font-size:1.8rem;line-height:1.15;letter-spacing:-.8px;margin:8px 0}.detail-info .detail-desc{color:var(--muted);line-height:1.6;font-size:.91rem}.detail-price{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin:14px 0}.detail-price .price{font-size:1.75rem}.spec-list{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0}.spec-item{padding:11px;border:1px solid var(--line);border-radius:12px}.spec-item span{display:block;font-size:.74rem;color:var(--muted);margin-bottom:4px}.spec-item strong{font-size:.86rem}.detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.related-heading{margin:25px 0 12px;font-size:1rem}.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.related-item{border:1px solid var(--line);padding:10px;border-radius:13px;cursor:pointer;display:flex;align-items:center;gap:10px}.related-item:hover{border-color:#b9adff}.related-item img{width:55px;height:60px;object-fit:contain;background:#f5f3ff;border-radius:9px}.related-item strong{display:block;font-size:.79rem;line-height:1.35}.related-item span{display:block;color:var(--brand);font-size:.78rem;font-weight:850;margin-top:4px}
+    .cart-item{display:grid;grid-template-columns:65px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.cart-item img{width:65px;height:70px;object-fit:contain;background:#f3f0ff;border-radius:12px}.cart-item h4{font-size:.9rem;margin:0 0 4px}.cart-item p{font-size:.8rem;color:var(--muted);margin:0 0 6px}.remove-btn{border:0;background:#fff0f0;color:#b42222;border-radius:8px;padding:7px 8px;font-size:.76rem;font-weight:850}.cart-total{display:flex;justify-content:space-between;font-weight:900;font-size:1.08rem;padding:18px 0}.success-message{padding:13px;border-radius:12px;background:#effbf3;border:1px solid #caedd6;color:#126738;font-size:.88rem;line-height:1.5;margin-top:12px}.toast{position:fixed;z-index:100;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;max-width:92%;padding:12px 17px;border-radius:12px;color:#fff;background:var(--ink);box-shadow:var(--shadow);font-size:.88rem;font-weight:750;transition:.25s;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.helper{font-size:.77rem;color:var(--muted);line-height:1.5}.form-error{color:#b42318;font-size:.8rem;margin:6px 0}.divider{height:1px;background:var(--line);margin:16px 0}.pill{display:inline-flex;border-radius:99px;background:#effbf3;color:#16844a;padding:6px 9px;font-size:.75rem;font-weight:850}
+    .realme-wordmark{display:flex;align-items:center;justify-content:center;width:76px;height:42px;background:#ffef00;color:#111;font-size:1.22rem;font-weight:1000;letter-spacing:-1.2px;border-radius:4px;transform:skew(-4deg)}
+    body.searching main>section:not(#products){display:none!important}body.searching #products{padding-top:22px;min-height:65vh}body.searching #products .catalog-tools,body.searching #products #filters{display:none!important}body.searching #catalogSubtitle{display:none}
+    @media(max-width:1000px){.navlinks{gap:13px}.brand-grid{grid-template-columns:repeat(4,1fr)}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-phone{width:160px;height:290px}.trust-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.top-search-row{padding:0 0 10px}.top-search{max-width:none}.announcement{font-size:.75rem}.nav{height:68px;gap:10px}.logo{font-size:1.12rem}.logo-mark{width:38px;height:38px}.navlinks{display:none;position:absolute;left:4%;right:4%;top:68px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:15px;border-radius:15px;flex-direction:column;align-items:stretch;gap:0}.navlinks.mobile-open{display:flex}.navlinks a{padding:12px 8px;border-bottom:1px solid #f0f1f6}.navlinks a:last-child{border:0}.nav-actions{margin-left:auto}.nav-btn{padding:9px 10px;font-size:.82rem}.hamburger{display:inline-grid;place-items:center}.hero{padding-top:22px}.hero-card{grid-template-columns:1fr;min-height:0}.hero-copy{padding:29px 25px 12px}.hero h1{font-size:clamp(2.5rem,11vw,3.7rem)}.hero-art{min-height:250px}.hero-phone{width:125px;height:224px;border-width:5px;border-radius:26px}.hero-phone:after{font-size:5rem}.tag-one{top:25px;right:10%}.tag-two{bottom:27px;left:9%}.section{padding:26px 0}.section-head{align-items:start}.offer-layout{grid-template-columns:1fr}.video-player,.video-empty{min-height:220px}.offer-player{min-height:0!important;height:auto!important;aspect-ratio:19 / 6!important}.brand-grid{grid-template-columns:repeat(4,1fr);gap:9px}.brand-tile{padding:12px 5px}.brand-logo-wrap{height:42px;width:54px}.brand-logo{max-height:38px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.product-visual{height:165px}.product-body{padding:11px}.product-title{font-size:.91rem}.price{font-size:1.03rem}.card-actions{gap:6px}.card-actions .btn{font-size:.72rem;padding:9px 5px}.exchange-box{grid-template-columns:1fr;gap:20px}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column}.product-detail{grid-template-columns:1fr}.detail-image{min-height:230px;max-height:300px}.detail-info h2{font-size:1.55rem}.related-grid{grid-template-columns:1fr 1fr}.dialog{max-height:94vh}.dialog-content{padding:17px}.dialog-head{padding:18px 17px 12px}}
+    @media(max-width:420px){.logo{gap:6px;font-size:.9rem;letter-spacing:-.4px}.logo span.logo-text{display:inline!important;font-size:.78rem;letter-spacing:-.45px;white-space:nowrap}.logo-mark{width:34px;height:34px;border-radius:11px}.shop-logo-image{width:34px;height:34px}.nav-actions{gap:5px}.nav-btn{padding:9px 8px}.hero-actions .btn{padding:12px 13px;font-size:.85rem}.brand-grid{grid-template-columns:repeat(4,1fr)}.brand-tile span:last-child{font-size:.74rem}.product-visual{height:145px}.discount-badge{left:7px;top:7px;font-size:.68rem;padding:5px 6px}.condition-badge{right:7px;top:7px;font-size:.63rem;padding:5px 6px}.card-actions{flex-direction:column}.form-row{grid-template-columns:1fr}.trust-grid{gap:9px}.trust-card{padding:14px}.related-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  
+    /* MOBI MANIA luxury purple + black theme; layout and functionality unchanged */
+    body{background:var(--paper);color:var(--ink)}
+    header{background:rgba(16,11,24,.94);border-color:var(--line)}
+    .nav-btn,.hamburger,.navlinks,.search input,.field input,.field select,.field textarea,
+    .btn-light,.btn-outline,.brand-tile,.brand-logo-wrap,.product-card,.filter-chip,
+    .dialog,.close-btn,.tabs,.tab.active,.related-item{background:#1b1425;color:var(--ink);border-color:var(--line)}
+    .nav-btn:hover,.brand-tile:hover,.brand-tile.active,.filter-chip:hover{border-color:#a855f7}
+    .filter-chip.active{background:#7e22ce;color:#fff;border-color:#a855f7}
+    .product-visual,.detail-image,.related-item img,.cart-item img{background:linear-gradient(145deg,#241632,#17101f)}
+    .condition-badge{background:#2b2038;color:#e9ddf7}
+    .discount-badge{background:#42220d;color:#ffd09a}
+    .remove-btn{background:#401d2c;color:#ffb4c7}
+    .success-message{background:#10291e;border-color:#245c3b;color:#9cf0b5}
+    .pill{background:#123022;color:#86efac}
+    .tabs{background:#130d1d}
+    .tab.active{background:#38204d;color:#f5f0ff}
+    .offer-promo{background:linear-gradient(140deg,#6b21a8,#2a123b);color:#fff}
+    .offer-promo .eyebrow{background:#ffffff12;border-color:#ffffff30;color:#f5eaff}
+    .offer-promo p{color:#e9d5ff}
+    .realme-wordmark{background:#c084fc;color:#160b22}
+    .footer{background:#09060e}
+    .navlinks a:hover,.link,.product-price,.detail-price .price{color:#c084fc}
+    .search input:focus,.field input:focus,.field select:focus,.field textarea:focus{border-color:#a855f7;box-shadow:0 0 0 3px #a855f72a}
+    .hero-card{background:radial-gradient(circle at 80% 18%,#7e22ce 0,transparent 27%),linear-gradient(115deg,#100b18,#21102f 57%,#581c87)}
+    .logo-mark{background:linear-gradient(140deg,#c084fc,#7e22ce);box-shadow:0 9px 20px #a855f744}
+    .overlay{background:#07040bd9}
+    @media(max-width:760px){.navlinks{background:#1b1425}}
+  
+    /* Purple luxury glow for popup/dialog boxes */
+    .dialog{
+      background:linear-gradient(145deg,#21162e,#120d1b)!important;
+      color:#f5f0ff!important;
+      border:1px solid rgba(192,132,252,.7);
+      box-shadow:0 0 0 1px rgba(168,85,247,.18),0 0 22px rgba(168,85,247,.36),0 0 48px rgba(126,34,206,.2),0 30px 80px rgba(0,0,0,.58);
+      animation:popupGlow 3.2s ease-in-out infinite alternate,pop .22s ease-out;
+    }
+    .dialog-head{border-bottom-color:rgba(192,132,252,.25)!important}
+    .dialog-head p,.dialog-footnote{color:#c9b8dd!important}
+    .dialog .close-btn{background:#21162e!important;color:#f5f0ff!important;border-color:#7e22ce!important;box-shadow:0 0 10px rgba(168,85,247,.18)}
+    .dialog .tabs{background:#171020!important}
+    .dialog .tab{color:#d9c7ee}
+    .dialog .tab.active,.dialog .tab[aria-selected="true"]{background:#7e22ce!important;color:#fff!important;box-shadow:0 0 14px rgba(168,85,247,.42)}
+    .dialog input,.dialog select,.dialog textarea{background:#171020!important;color:#f5f0ff!important;border-color:#65417d!important}
+    .dialog input::placeholder,.dialog textarea::placeholder{color:#a998bb}
+    .toast{border:1px solid rgba(216,180,254,.8);background:linear-gradient(120deg,#241432,#100b18)!important;box-shadow:0 0 14px rgba(168,85,247,.42),0 0 30px rgba(126,34,206,.25),var(--shadow)!important}
+    .exchange-form-card{box-shadow:0 0 0 1px rgba(192,132,252,.4),0 0 22px rgba(168,85,247,.24)}
+    @keyframes popupGlow{from{box-shadow:0 0 0 1px rgba(168,85,247,.18),0 0 16px rgba(168,85,247,.24),0 0 34px rgba(126,34,206,.12),0 30px 80px rgba(0,0,0,.58)}to{box-shadow:0 0 0 1px rgba(216,180,254,.35),0 0 28px rgba(168,85,247,.48),0 0 56px rgba(126,34,206,.28),0 30px 80px rgba(0,0,0,.58)}}
+    @media(prefers-reduced-motion:reduce){.dialog{animation:pop .22s ease-out}.toast,.exchange-form-card{transition:none}}
+
+  
+/* Liquid-glass / water-drop finish for every popup */
+.dialog{
+  background:linear-gradient(135deg,rgba(35,22,52,.92),rgba(15,10,24,.94))!important;
+  color:#f8f2ff!important;
+  border:1px solid rgba(210,170,255,.42)!important;
+  -webkit-backdrop-filter:blur(24px) saturate(155%);
+  backdrop-filter:blur(24px) saturate(155%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),
+    inset 0 -1px 0 rgba(190,130,255,.12),
+    0 0 0 1px rgba(168,85,247,.15),
+    0 12px 35px rgba(0,0,0,.48),
+    0 0 28px rgba(168,85,247,.25)!important;
+  position:relative;
+  isolation:isolate;
+  overflow:auto;
+  animation:liquidPopupIn .42s cubic-bezier(.2,.8,.2,1),popupGlow 3.2s ease-in-out infinite alternate!important;
+}
+.dialog::before{
+  content:"";
+  position:absolute;inset:0 0 auto 0;height:42%;
+  pointer-events:none;border-radius:inherit;
+  background:linear-gradient(180deg,rgba(255,255,255,.075),transparent);
+  z-index:-1;
+}
+.dialog-content{background:transparent!important;color:#f5f0ff!important}
+.dialog .empty-state,
+.dialog [class*="empty"],
+.dialog .related-item,
+.dialog .product-card{
+  background:linear-gradient(145deg,rgba(43,30,61,.92),rgba(24,16,35,.96))!important;
+  color:#eee4ff!important;
+  border-color:rgba(192,132,252,.32)!important;
+}
+.dialog .empty-state h3,.dialog .empty-state p,
+.dialog h2,.dialog h3,.dialog label{color:#f5f0ff!important}
+.dialog .empty-state{border-style:solid!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 20px rgba(168,85,247,.09)}
+.dialog .dialog-head{background:transparent!important}
+@keyframes liquidPopupIn{
+  from{opacity:0;transform:translateY(12px) scale(.975);filter:blur(5px)}
+  to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+}
+@keyframes popupGlow{
+  from{box-shadow:inset 0 1px 0 rgba(255,255,255,.13),0 12px 35px rgba(0,0,0,.48),0 0 18px rgba(168,85,247,.18)}
+  to{box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 12px 35px rgba(0,0,0,.48),0 0 32px rgba(168,85,247,.36)}
+}
+
+  
+
+    /* Stronger, cohesive Liquid Glass treatment across popup interiors */
+    .dialog{
+      background:linear-gradient(135deg,rgba(39,23,58,.88),rgba(13,8,22,.91) 58%,rgba(45,20,68,.86))!important;
+      border:1px solid rgba(222,190,255,.58)!important;
+      -webkit-backdrop-filter:blur(30px) saturate(180%)!important;
+      backdrop-filter:blur(30px) saturate(180%)!important;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 1px 0 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(192,132,252,.24),0 18px 55px rgba(0,0,0,.58),0 0 34px rgba(168,85,247,.30)!important;
+    }
+    .dialog::before{
+      content:"";position:absolute;inset:0 0 auto;height:42%;pointer-events:none;z-index:0;border-radius:inherit;
+      background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.035) 28%,transparent 72%);
+      border-bottom:1px solid rgba(255,255,255,.055);
+    }
+    .dialog::after{
+      content:"";position:absolute;top:-45%;left:-35%;width:75%;height:90%;pointer-events:none;z-index:0;
+      background:radial-gradient(ellipse,rgba(216,180,254,.13),transparent 68%);transform:rotate(-18deg);
+    }
+    .dialog > *{position:relative;z-index:1}
+    .dialog-head,.dialog-content,.dialog-footnote{background:transparent!important}
+    .dialog-head{border-bottom-color:rgba(220,190,255,.20)!important}
+    /* Fix the white empty-cart panel shown inside the modal */
+    .dialog .empty-state,.dialog #cartItems .empty-state{
+      background:linear-gradient(145deg,rgba(58,35,78,.68),rgba(24,15,37,.72))!important;
+      color:#e6d9f4!important;border:1px solid rgba(211,174,255,.38)!important;
+      border-radius:22px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.14),inset 0 -1px 0 rgba(192,132,252,.12),0 10px 28px rgba(0,0,0,.22),0 0 22px rgba(168,85,247,.12)!important;
+      -webkit-backdrop-filter:blur(22px) saturate(160%)!important;backdrop-filter:blur(22px) saturate(160%)!important;
+    }
+    .dialog .empty-state h3{color:#fbf7ff!important;text-shadow:0 0 16px rgba(216,180,254,.24)}
+    .dialog .empty-state p{color:#cdbbdd!important}
+    .dialog .btn,.dialog .close-btn,.dialog .tab,.dialog .related-item,.dialog .spec-item,.dialog .cart-item,.dialog .success-message,.dialog .pill{
+      border-color:rgba(205,165,255,.30)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 5px 16px rgba(0,0,0,.16);
+    }
+    .dialog .btn-outline,.dialog .close-btn,.dialog .related-item,.dialog .spec-item,.dialog .cart-item{
+      background:linear-gradient(135deg,rgba(255,255,255,.085),rgba(168,85,247,.07))!important;color:#f5edff!important;
+      -webkit-backdrop-filter:blur(14px)!important;backdrop-filter:blur(14px)!important;
+    }
+    .dialog .btn-primary{box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 5px 18px rgba(168,85,247,.34)!important}
+    .dialog .tabs{background:rgba(10,6,17,.42)!important;border:1px solid rgba(220,190,255,.14)}
+    .dialog .tab.active,.dialog .tab[aria-selected="true"]{background:linear-gradient(135deg,rgba(168,85,247,.85),rgba(91,33,182,.88))!important}
+    .dialog input,.dialog select,.dialog textarea{background:rgba(13,8,22,.56)!important;border:1px solid rgba(205,165,255,.30)!important;border-radius:12px!important;box-shadow:inset 0 1px 8px rgba(0,0,0,.18)!important}
+    .dialog input:focus,.dialog select:focus,.dialog textarea:focus{border-color:rgba(216,180,254,.85)!important;box-shadow:0 0 0 3px rgba(168,85,247,.17),0 0 18px rgba(168,85,247,.14)!important}
+    .dialog .detail-image,.dialog .related-item img,.dialog .cart-item img{background:linear-gradient(145deg,rgba(168,85,247,.16),rgba(10,6,17,.50))!important}
+    .overlay.open{background:rgba(4,2,9,.72)!important;-webkit-backdrop-filter:blur(7px) saturate(125%);backdrop-filter:blur(7px) saturate(125%)}
+    @media(prefers-reduced-motion:reduce){.dialog{animation:none!important}}
+
+
+    /* MOBI MANIA premium midnight-purple visual system */
+    :root{--ink:#f8f3ff;--muted:#c1b4d4;--paper:#09060f;--card:#171020;--brand:#b66cff;--brand-dark:#8b35e8;--lime:#d2a0ff;--orange:#f0b4ff;--line:#453052;--success:#54e6a1;--shadow:0 18px 50px rgba(0,0,0,.48);--radius:22px}
+    body{background:radial-gradient(ellipse at 15% 0%,rgba(115,42,173,.12),transparent 35%),var(--paper);color:var(--ink)}
+    header{background:rgba(12,8,19,.82);border-bottom-color:rgba(199,137,255,.22);box-shadow:0 8px 35px #0003}
+    .nav-btn,.hamburger{background:rgba(255,255,255,.055);color:var(--ink);border-color:#4b355b;backdrop-filter:blur(16px)}
+    .navlinks{color:var(--ink)}.navlinks.mobile-open{background:rgba(20,13,29,.97)}.navlinks a{border-color:#392644!important}
+    .btn-primary{background:linear-gradient(135deg,#c084fc,#842be0);box-shadow:0 8px 24px #a855f744,inset 0 1px #ffffff4d}.btn-primary:hover{background:linear-gradient(135deg,#d2a0ff,#963cf0);box-shadow:0 10px 30px #a855f777}
+    .btn-outline,.btn-light,.btn-dark,.btn-lime{color:var(--ink);background:rgba(255,255,255,.055);border:1px solid #60416f;backdrop-filter:blur(14px)}
+    .hero-card{background:radial-gradient(circle at 80% 18%,#8e45d3 0,transparent 30%),linear-gradient(120deg,#100a18,#241331 57%,#502477);border:1px solid #b66cff44;box-shadow:0 22px 70px #0006,0 0 35px #8b35e81c}
+    .float-tag{background:rgba(28,18,39,.76);color:var(--ink);border:1px solid #ffffff35;backdrop-filter:blur(18px);box-shadow:0 14px 35px #0006}.float-tag span{color:var(--muted)}
+    .offer-player,.offer-promo,.brand-tile,.product-card,.trust-card,.exchange-box,.map-frame{border:1px solid rgba(202,150,255,.23);box-shadow:0 12px 35px #0003, inset 0 1px #ffffff08}
+    .offer-player{background:#130b1b;box-shadow:0 0 0 1px #b66cff22,0 18px 45px #0005}.offer-player video{background:#130b1b}.offer-promo{background:linear-gradient(135deg,#21112e,#381a50 65%,#512579);color:var(--ink)}.offer-promo p{color:#dfd0ef}.offer-promo .eyebrow{background:#ffffff10;border-color:#ffffff30;color:#f8eaff}
+    .brand-tile{background:linear-gradient(145deg,rgba(255,255,255,.095),rgba(255,255,255,.025));color:var(--ink);backdrop-filter:blur(16px);box-shadow:inset 0 1px #ffffff16,0 10px 25px #0003}.brand-tile:hover,.brand-tile.active{border-color:#c084fc;box-shadow:0 0 0 1px #b66cff35,0 0 24px #a855f744;transform:translateY(-4px)}.brand-logo-wrap{background:rgba(255,255,255,.92);box-shadow:inset 0 1px #fff}.brand-tile:nth-child(5) .brand-logo-wrap{background:#FFC915}
+    .product-card{background:linear-gradient(150deg,rgba(38,25,51,.96),rgba(17,11,25,.98));color:var(--ink);box-shadow:0 12px 30px #0004,inset 0 1px #ffffff0c}.product-card:hover{border-color:#b66cff;box-shadow:0 16px 38px #0006,0 0 26px #a855f72a}.product-visual{background:radial-gradient(circle at 50% 35%,#39244c,#17101f 72%)}.product-visual img{filter:drop-shadow(0 12px 15px #0005)}
+    .search input,.catalog-tools select,.filter-chip,.field input,.field select,.field textarea{background:rgba(255,255,255,.055);color:var(--ink);border:1px solid #4b355b}.search input::placeholder,.field input::placeholder,.field textarea::placeholder{color:#a99ab9}.filter-chip{color:var(--muted)}.filter-chip.active{background:linear-gradient(135deg,#a855f7,#6d28d9);color:#fff;border-color:#c084fc;box-shadow:0 0 18px #a855f733}.search input:focus,.field input:focus,.field select:focus,.field textarea:focus{border-color:#c084fc;box-shadow:0 0 0 3px #a855f733}
+    .empty-state{background:linear-gradient(145deg,#1c1228,#110b19);border-color:#795393;color:var(--muted)}.empty-state h3{color:var(--ink)}
+    .overlay{background:rgba(3,1,8,.78);backdrop-filter:blur(12px)}.dialog{color:var(--ink);background:linear-gradient(145deg,rgba(43,28,57,.91),rgba(16,10,24,.96));border:1px solid #d7adff55;backdrop-filter:blur(28px) saturate(145%);box-shadow:0 30px 100px #0009,0 0 45px #a855f72a,inset 0 1px #ffffff26}.dialog-head{border-bottom:1px solid #ffffff17}.dialog-content{color:var(--ink)}.close-btn{background:rgba(255,255,255,.07);color:var(--ink);border:1px solid #ffffff2c}.cart-item img,.related-item img{background:rgba(255,255,255,.08);border:1px solid #ffffff16}.success-message{background:rgba(37,190,117,.12);border:1px solid #54e6a155;color:#b7ffda}.remove-btn{background:#e5486820;color:#ffb9c7;border:1px solid #e5486840}.toast{background:rgba(31,19,43,.94);border:1px solid #b66cff66;backdrop-filter:blur(18px);box-shadow:0 0 25px #a855f733}
+    .pill{background:#54e6a11b;color:#9effc8;border:1px solid #54e6a144}
+    footer{background:linear-gradient(145deg,#100a18,#1b1027);border-top:1px solid #4a315c} .map-frame{background:#130b1b}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.trust-card{padding:18px;border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));backdrop-filter:blur(16px)}.trust-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#a855f726;border:1px solid #c084fc40;font-size:1.25rem;margin-bottom:12px}.trust-card h3{font-size:.98rem;margin:0 0 6px}.trust-card p{font-size:.82rem;line-height:1.55;color:var(--muted);margin:0}
+    .scroll-reveal{transition-duration:1s;transition-timing-function:cubic-bezier(.16,1,.3,1)}
+    @media(max-width:1000px){.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:760px){.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.trust-card{padding:14px}.offer-promo{padding:22px}}
+    @media(max-width:420px){.trust-grid{grid-template-columns:1fr 1fr}.trust-card h3{font-size:.87rem}.trust-card p{font-size:.76rem}}
+
+  
+    /* Mobi Mania premium dark-glass fix: keep form panels dark, never white */
+    .exchange-form-card,
+    #exchangeForm,
+    .modal,
+    .modal-content,
+    .overlay-panel,
+    .popup,
+    .dialog,
+    .cart-empty,
+    .empty-state,
+    .account-panel,
+    .form-card {
+      background: linear-gradient(145deg, rgba(29,18,46,.96), rgba(12,9,22,.97)) !important;
+      color: #f7f0ff !important;
+      border: 1px solid rgba(192,132,252,.68) !important;
+      box-shadow:
+        0 0 0 1px rgba(168,85,247,.18),
+        0 0 18px rgba(168,85,247,.26),
+        0 0 42px rgba(126,34,206,.20),
+        inset 0 1px 0 rgba(255,255,255,.13) !important;
+      backdrop-filter: blur(24px) saturate(155%);
+      -webkit-backdrop-filter: blur(24px) saturate(155%);
+    }
+    .exchange-form-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px !important;
+    }
+    .exchange-form-card::before,
+    #exchangeForm::before {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(130deg, rgba(255,255,255,.15) 0%, rgba(192,132,252,.07) 24%, transparent 48%, rgba(168,85,247,.09) 75%, transparent 100%);
+      opacity: .9;
+    }
+    .exchange-form-card h3,
+    .exchange-form-card label,
+    .exchange-form-card p,
+    .exchange-form-card .field,
+    #exchangeForm h3,
+    #exchangeForm label { color: #f0e5ff !important; position: relative; }
+    .exchange-form-card input,
+    .exchange-form-card select,
+    .exchange-form-card textarea,
+    #exchangeForm input,
+    #exchangeForm select,
+    #exchangeForm textarea,
+    input, select, textarea {
+      color: #fbf7ff;
+      color-scheme: dark;
+    }
+    .exchange-form-card input,
+    .exchange-form-card select,
+    .exchange-form-card textarea,
+    #exchangeForm input,
+    #exchangeForm select,
+    #exchangeForm textarea {
+      background: linear-gradient(135deg, rgba(35,24,51,.94), rgba(17,12,28,.97)) !important;
+      border: 1px solid rgba(192,132,252,.7) !important;
+      border-radius: 16px !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 0 12px rgba(168,85,247,.12) !important;
+    }
+    .exchange-form-card input::placeholder,
+    #exchangeForm input::placeholder { color: #b9a9d0 !important; opacity: 1; }
+    .exchange-form-card select option,
+    #exchangeForm select option { background: #171022; color: #f7f0ff; }
+    .exchange-form-card input:focus,
+    .exchange-form-card select:focus,
+    .exchange-form-card textarea:focus,
+    #exchangeForm input:focus,
+    #exchangeForm select:focus,
+    #exchangeForm textarea:focus {
+      outline: none !important;
+      border-color: #e9d5ff !important;
+      box-shadow: 0 0 0 3px rgba(168,85,247,.24), 0 0 24px rgba(168,85,247,.42) !important;
+    }
+    .btn, button, .brand-tile, .product-card, .trust-card {
+      transition: box-shadow .3s ease, border-color .3s ease, transform .3s ease, filter .3s ease;
+    }
+    .btn-prim, .btn-primary, .exchange-form-card button {
+      box-shadow: 0 0 14px rgba(168,85,247,.3), 0 0 28px rgba(126,34,206,.2), inset 0 1px 0 rgba(255,255,255,.22);
+    }
+    .btn-prim:hover, .btn-primary:hover, .exchange-form-card button:hover {
+      filter: brightness(1.12);
+      box-shadow: 0 0 20px rgba(192,132,252,.55), 0 0 42px rgba(126,34,206,.34), inset 0 1px 0 rgba(255,255,255,.28);
+    }
+    .brand-tile, .product-card, .trust-card {
+      border-color: rgba(168,85,247,.3);
+      box-shadow: 0 0 0 1px rgba(168,85,247,.05), 0 8px 26px rgba(0,0,0,.2);
+    }
+    .brand-tile:hover, .product-card:hover, .trust-card:hover {
+      border-color: rgba(216,180,254,.8);
+      box-shadow: 0 0 18px rgba(168,85,247,.25), 0 0 34px rgba(126,34,206,.18);
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .exchange-form-card { animation: exchangeGlow 5s ease-in-out infinite alternate; }
+      @keyframes exchangeGlow {
+        from { box-shadow: 0 0 0 1px rgba(168,85,247,.2), 0 0 18px rgba(168,85,247,.18), 0 0 32px rgba(126,34,206,.12), inset 0 1px 0 rgba(255,255,255,.12); }
+        to { box-shadow: 0 0 0 1px rgba(216,180,254,.38), 0 0 26px rgba(168,85,247,.34), 0 0 54px rgba(126,34,206,.24), inset 0 1px 0 rgba(255,255,255,.18); }
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .exchange-form-card { animation: none !important; }
+      *, *::before, *::after { scroll-behavior: auto !important; }
+    }
+
+    /* Performance pass: keep scroll reveals GPU-friendly on mobile. */
+    .scroll-reveal{opacity:0;transform:translate3d(0,18px,0);filter:none!important;will-change:auto;transition:opacity .38s ease,transform .38s cubic-bezier(.2,.7,.2,1);transition-delay:0ms!important}
+    .scroll-reveal.is-visible{opacity:1;transform:translate3d(0,0,0);filter:none!important}
+    .brand-tile .brand-logo{will-change:auto}
+    .brand-tile,.product-card,.trust-card,.btn,button{transition-duration:.18s}
+    .hero-glow{filter:blur(42px);opacity:.34}
+    /* CSS-rendered iPhone 18 Pro Max-inspired 3D concept (illustrative, not official product artwork). */
+    .hero-phone.iphone-18-concept{width:174px;height:326px;border:0;border-radius:0;background:transparent;display:block;transform:perspective(900px) rotateY(-19deg) rotateZ(8deg);box-shadow:none;filter:drop-shadow(16px 28px 18px rgba(0,0,0,.42));}
+    .iphone-back{position:absolute;inset:0;border-radius:32px;background:linear-gradient(115deg,#5a5365 0%,#d7d0dd 5%,#8f879c 10%,#383141 18%,#25202e 52%,#55485f 94%,#b5a9c5 100%);border:2px solid #c9bfd5;box-shadow:inset 2px 0 3px #fff8,inset -4px 0 8px #0008;overflow:hidden}
+    .iphone-back:before{content:"";position:absolute;inset:5px;border-radius:27px;background:linear-gradient(135deg,#403849,#26212d 44%,#51465d 100%);box-shadow:inset 0 0 0 1px #ffffff24}
+    .camera-island{position:absolute;top:13px;left:12px;width:92px;height:100px;border-radius:25px;background:linear-gradient(145deg,#aaa1b5,#39313f 32%,#211c28);border:1px solid #c6bacf;z-index:2;box-shadow:inset 0 2px 5px #ffffff55,0 4px 8px #0008}
+    .camera-island i{position:absolute;width:32px;height:32px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#64758b 0 7%,#11131c 23%,#030408 54%,#626071 66%,#17151e 78%);border:3px solid #8f8998;box-shadow:inset 0 0 0 2px #111,0 1px 3px #000}
+    .camera-island i:nth-child(1){top:8px;left:8px}.camera-island i:nth-child(2){top:54px;left:8px}.camera-island i:nth-child(3){top:31px;right:7px}
+    .camera-island b{position:absolute;right:7px;top:9px;width:10px;height:10px;border-radius:50%;background:radial-gradient(circle,#fff7d8,#b6a9a0 48%,#403846 70%);box-shadow:0 0 5px #fff7}
+    .apple-mark{position:absolute;top:47%;left:50%;transform:translate(-50%,-50%);font-size:28px;color:#c9c1d0;text-shadow:0 1px 1px #fff8,0 3px 6px #0009;z-index:2}
+    .phone-model-mark{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#b9afc5;font-size:8px;letter-spacing:2px;font-weight:800;z-index:2}
+    .iphone-side{position:absolute;top:10px;bottom:10px;right:-7px;width:13px;border-radius:8px;background:linear-gradient(90deg,#211b27,#c2b5ce,#54485f);transform:translateX(1px);z-index:0}
+    .iphone-screen{position:absolute;right:-23px;top:23px;width:151px;height:294px;border:4px solid #c8bfd2;border-radius:30px;background:radial-gradient(circle at 70% 20%,#60447e,#16111f 48%,#050509 100%);box-shadow:inset 0 0 0 1px #fff5,0 9px 24px #0009;transform:translateZ(20px) rotateY(7deg);z-index:-1;overflow:hidden}
+    .dynamic-island{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:58px;height:17px;border-radius:99px;background:#020205;box-shadow:inset 0 1px 2px #fff2}
+    .screen-glint{position:absolute;inset:0;background:linear-gradient(115deg,transparent 15%,#ffffff1c 35%,transparent 48%,#b98bff10 75%,transparent 88%)}
+    @media(max-width:760px){.hero-phone.iphone-18-concept{transform:scale(.83) perspective(900px) rotateY(-19deg) rotateZ(8deg);transform-origin:center}.hero-art{overflow:hidden}.hero-glow{filter:blur(32px)}}
+    @media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
+
+    /* Fix: never hide the entire hero while it is outside the viewport; this caused a large blank gap on mobile. */
+    .hero-card{opacity:1!important;visibility:visible!important;transform:none!important;filter:none!important}
+    .hero-card.scroll-reveal{opacity:1!important;transform:none!important;filter:none!important}
+    .hero{height:auto;min-height:0}
+    .hero-iphone-stage{position:relative;z-index:2;width:min(92%,360px);height:340px;display:grid;place-items:center;perspective:1000px;isolation:isolate}
+    .hero-iphone-stage:before{content:"";position:absolute;inset:13% 5%;border-radius:35px;background:radial-gradient(ellipse at 50% 55%,rgba(216,180,254,.42),rgba(126,34,206,.2) 42%,transparent 72%);filter:blur(16px);z-index:-1}
+    .hero-iphone-image{display:block;width:100%;height:100%;object-fit:contain;border-radius:24px;transform:rotateY(-13deg) rotateZ(-3deg) scale(.98);transform-origin:center;filter:drop-shadow(12px 24px 20px rgba(0,0,0,.42));transition:transform .45s ease,filter .45s ease}
+    .hero-iphone-stage:hover .hero-iphone-image{transform:rotateY(-7deg) rotateZ(-1deg) scale(1.025);filter:drop-shadow(16px 30px 24px rgba(0,0,0,.48))}
+    .hero-art{min-height:350px;align-content:center;overflow:visible}
+    .hero-art .float-tag{z-index:4;background:rgba(23,15,34,.86);color:#f5f0ff;border:1px solid rgba(216,180,254,.32);box-shadow:0 10px 30px rgba(0,0,0,.3),0 0 22px rgba(168,85,247,.16);backdrop-filter:blur(12px)}
+    .hero-art .float-tag span{color:#d7c8e9}
+    @media(max-width:760px){
+      .hero-card{grid-template-columns:minmax(0,1fr);min-height:0}
+      .hero-copy{padding-bottom:8px}
+      .hero-art{min-height:300px;padding:0 0 18px;overflow:hidden}
+      .hero-iphone-stage{width:min(88%,330px);height:290px}
+      .hero-iphone-image{transform:perspective(900px) rotateY(-9deg) rotateZ(-2deg) scale(.98)}
+      .tag-one{top:24px;right:5%}
+      .tag-two{bottom:20px;left:5%}
+    }
+    @media(max-width:420px){.hero-art{min-height:275px}.hero-iphone-stage{height:265px;width:min(90%,300px)}.hero-art .float-tag{padding:9px 11px}.hero-art .float-tag strong{font-size:1rem}}
+    @media(prefers-reduced-motion:reduce){.hero-iphone-image{transition:none}}
+
+
+</style>
+
+<style id="mobi-final-polish">
+/* Final responsive video sizing: a true 19:6 frame on every screen. */
+#offers { margin-bottom:0!important; padding-bottom:10px!important; }
+#offers .offer-layout { display:block!important; margin:0!important; padding:0!important; }
+.offer-player { position:relative!important; display:block!important; width:100%!important; height:auto!important; min-height:0!important; aspect-ratio:19 / 6!important; margin:0!important; padding:0!important; overflow:hidden!important; background:#130b1b; contain:layout paint; }
+.offer-player video { position:absolute!important; inset:0!important; display:block!important; width:100%!important; height:100%!important; min-height:0!important; max-height:none!important; aspect-ratio:auto!important; object-fit:contain!important; object-position:center; background:#130b1b; }
+/* Keep the same repeating reveal motion, but use only compositor-friendly opacity/transform. */
+.scroll-reveal { opacity:0; visibility:hidden; transform:translate3d(0,18px,0); filter:none!important; transition:opacity .42s ease,transform .42s cubic-bezier(.2,.7,.2,1),visibility .42s; transition-delay:0ms!important; will-change:opacity,transform; }
+.scroll-reveal.is-visible { opacity:1; visibility:visible; transform:translate3d(0,0,0); }
+.hero-card,.hero-card.scroll-reveal { opacity:1!important; visibility:visible!important; transform:none!important; filter:none!important; }
+/* Liquid glass popups remain saturated; lighter blur keeps mobile scrolling responsive. */
+.overlay { background:rgba(4,1,12,.82)!important; -webkit-backdrop-filter:blur(7px) saturate(145%); backdrop-filter:blur(7px) saturate(145%); }
+.dialog { background:linear-gradient(140deg,rgba(70,35,100,.97),rgba(20,10,32,.98) 54%,rgba(43,15,67,.97))!important; color:#fbf6ff!important; border:1px solid rgba(220,170,255,.68)!important; -webkit-backdrop-filter:blur(12px) saturate(165%); backdrop-filter:blur(12px) saturate(165%); box-shadow:inset 0 1px 0 rgba(255,255,255,.24),0 0 0 1px rgba(168,85,247,.18),0 0 28px rgba(168,85,247,.35),0 22px 65px rgba(0,0,0,.64)!important; }
+.dialog::before { content:""; pointer-events:none; position:absolute; inset:0 0 auto 0; height:44%; border-radius:inherit; background:linear-gradient(180deg,rgba(255,255,255,.13),rgba(255,255,255,.025) 38%,transparent); z-index:0; }
+.dialog > * { position:relative; z-index:1; }
+.dialog-head,.dialog-content,.dialog-footnote { background:transparent!important; color:#f7edff!important; }
+.dialog-head { border-bottom-color:rgba(230,190,255,.25)!important; }
+.dialog-head p,.dialog-footnote,.dialog label { color:#d9c6ec!important; }
+.dialog .empty-state,.dialog #cartItems .empty-state,.dialog .cart-empty { background:linear-gradient(145deg,rgba(79,42,112,.52),rgba(17,9,28,.72))!important; color:#fbf6ff!important; border:1px solid rgba(220,170,255,.32)!important; box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 0 18px rgba(168,85,247,.16)!important; }
+.dialog .btn,.dialog .close-btn,.dialog .tab,.dialog .related-item,.dialog .spec-item,.dialog .cart-item,.dialog .success-message,.dialog .pill { -webkit-backdrop-filter:blur(7px) saturate(150%); backdrop-filter:blur(7px) saturate(150%); }
+.dialog input,.dialog select,.dialog textarea { background:rgba(13,6,23,.82)!important; color:#fff!important; border-color:rgba(210,165,255,.48)!important; }
+.dialog input:focus,.dialog select:focus,.dialog textarea:focus { border-color:#d8b4fe!important; box-shadow:0 0 0 3px rgba(168,85,247,.2),0 0 15px rgba(168,85,247,.2)!important; }
+/* On touch devices, preserve glow and animation while avoiding expensive live backdrop filters. */
+@media(max-width:760px){#offers{padding-bottom:8px!important}.scroll-reveal{transform:translate3d(0,14px,0);transition-duration:.36s}.overlay,.dialog,.dialog .btn,.dialog .close-btn,.dialog .tab,.dialog .related-item,.dialog .spec-item,.dialog .cart-item,.dialog .success-message,.dialog .pill{ -webkit-backdrop-filter:none!important;backdrop-filter:none!important; } .dialog{box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 0 24px rgba(168,85,247,.3),0 20px 55px rgba(0,0,0,.6)!important;} }
+@media(prefers-reduced-motion:reduce){.scroll-reveal,.scroll-reveal.is-visible{opacity:1;visibility:visible;transform:none;transition:none}.dialog{animation:none!important}}
+</style>
+
+
+<style id="disable-touch-effects-final">
+/* Disable decorative tap/press effects on touchscreens; keep normal clicks and scrolling. */
+@media (hover: none), (pointer: coarse) {
+  html { -webkit-tap-highlight-color: transparent; }
+  button, a, .brand-tile, .product-card, .product-visual, .filter-chip, .nav-btn, .hamburger, .btn, .hero-iphone-stage {
+    -webkit-tap-highlight-color: transparent !important;
+    touch-action: manipulation;
+  }
+  button:active, a:active, .brand-tile:active, .product-card:active, .product-visual:active, .filter-chip:active, .nav-btn:active, .hamburger:active, .btn:active, .hero-iphone-stage:active {
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+  }
+  .hero-iphone-stage:hover .hero-iphone-image, .product-card:hover, .product-card:hover .product-visual img, .brand-tile:hover, .nav-btn:hover, .filter-chip:hover {
+    transform: none !important;
+    filter: none !important;
+  }
+}
+</style>
+
+
+  <style id="search-icon-position-fix">
+    /* Align the search magnifier consistently in both search bars */
+    .search:before{
+      content:"" !important;
+      position:absolute;
+      left:15px;
+      top:50%;
+      width:12px;
+      height:12px;
+      border:2px solid currentColor;
+      border-radius:50%;
+      font-size:0;
+      line-height:0;
+      transform:translateY(-62%);
+      pointer-events:none;
+      opacity:.82;
+    }
+    .search:after{
+      content:"";
+      position:absolute;
+      left:27px;
+      top:calc(50% + 3px);
+      width:7px;
+      height:2px;
+      border-radius:2px;
+      background:currentColor;
+      transform:rotate(45deg);
+      transform-origin:left center;
+      pointer-events:none;
+      opacity:.82;
+    }
+    .search input{padding-left:43px !important;}
+    .top-search:before{color:#c1b4d4;}
+  </style>
+
+<style id="mobi-mania-menu-search-motion-fix">
+/* Smoothly hide the top search row while the mobile navigation menu is open. */
+.top-search-row {
+  overflow: hidden;
+  max-height: 72px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: max-height .28s ease, opacity .22s ease, transform .28s ease, padding .28s ease;
+}
+.top-search-row.menu-search-hidden {
+  max-height: 0 !important;
+  opacity: 0;
+  transform: translateY(-8px);
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .top-search-row { transition: none !important; }
+}
+</style>
+
+
+<style id="mobi-customer-reviews-fix">
+/* Customer trust and reviews section: restored styles */
+.mm-trust-reviews{margin:28px auto 34px;clear:both}
+.mm-trust-badge{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;box-sizing:border-box;padding:17px 16px;border-radius:999px;background:#c83a42;color:#fff;font-weight:800;text-align:center;letter-spacing:.1px;box-shadow:0 8px 25px rgba(200,58,66,.18);cursor:default;user-select:none}
+.mm-trust-badge .mm-shield{width:22px;height:22px;flex:0 0 auto}
+.mm-google-rating{margin:22px 0 24px;padding:20px;border:1px solid rgba(255,255,255,.09);border-radius:24px;background:#111;color:#f5f5f5;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+.mm-google-rating a{display:block;color:inherit;text-decoration:none}
+.mm-google-top{display:flex;align-items:center;gap:13px}
+.mm-google-g{display:flex;align-items:center;justify-content:center;width:48px;height:48px;flex:0 0 auto;border-radius:50%;background:#fff;font-size:29px;font-weight:800;color:#4285f4}
+.mm-google-rating h3{margin:0;font-size:18px}
+.mm-google-rating .mm-google-sub{margin:5px 0 0;color:#aaa;font-size:13px}
+.mm-google-score{display:flex;align-items:center;gap:10px;margin-top:17px}
+.mm-google-score strong{font-size:29px}
+.mm-google-stars{color:#fbbc04;letter-spacing:2px;font-size:23px}
+.mm-google-rating .mm-rating-caption{margin:7px 0 0;color:#aaa;font-size:13px;line-height:1.45}
+.mm-google-cta{display:flex;align-items:center;justify-content:center;margin-top:17px;padding:12px 15px;border-radius:999px;background:#2864c5;color:#fff;font-weight:750}
+.mm-reviews-heading{text-align:center;margin:24px 0 16px}
+.mm-reviews-heading h2{margin:0;font-size:24px;color:var(--ink)}
+.mm-reviews-heading p{margin:7px 0 0;color:var(--muted);line-height:1.55}
+.mm-review-window{position:relative;height:330px;overflow:hidden;border-radius:20px;mask-image:linear-gradient(to bottom,transparent 0%,#000 15%,#000 78%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 15%,#000 78%,transparent 100%)}
+.mm-review-track{display:flex;flex-direction:column;gap:12px;animation:mmReviewScroll 30s linear infinite;will-change:transform}
+.mm-review-window:hover .mm-review-track,.mm-review-window:focus-within .mm-review-track{animation-play-state:paused}
+.mm-review-card{flex:0 0 auto;padding:17px;border:1px solid rgba(255,255,255,.1);border-radius:19px;background:linear-gradient(145deg,#20172a,#100b18);color:#eee;box-shadow:0 10px 24px rgba(0,0,0,.16)}
+.mm-review-card p{margin:0;line-height:1.65;font-size:14px;color:#ddd}
+.mm-review-person{display:flex;align-items:center;gap:10px;margin-top:13px}
+.mm-review-avatar{display:flex;align-items:center;justify-content:center;width:38px;height:38px;flex:0 0 auto;border-radius:50%;background:#342044;color:#e8d9ff;font-weight:800}
+.mm-review-person strong{display:block;font-size:13px}
+.mm-review-person small{display:block;margin-top:3px;color:#aaa;font-size:12px}
+.mm-review-person .mm-review-stars{color:#fbbc04;letter-spacing:1px;font-size:15px}
+@keyframes mmReviewScroll{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+@media(max-width:600px){.mm-trust-reviews{margin-top:20px}.mm-trust-badge{border-radius:16px;font-size:.9rem;padding:14px 12px}.mm-google-rating{padding:16px;border-radius:18px}.mm-review-window{height:300px}.mm-review-card{padding:15px}.mm-reviews-heading h2{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.mm-review-track{animation:none}.mm-review-window{height:auto;mask-image:none;-webkit-mask-image:none}}
+</style>
+</head>
+<body>
+  <div class="announcement" aria-label="Mobi Mania Fest offer"><div class="announcement-track">⚡ Mobi Mania Fest is on — <strong>save 10% to 50%</strong> on selected pre-loved phones!&nbsp;&nbsp;&nbsp;⚡ Mobi Mania Fest is on — <strong>save 10% to 50%</strong> on selected pre-loved phones!</div></div>
+  <header>
+    <div class="wrap nav">
+      <a href="#home" class="logo" aria-label="Mobi Mania home">
+        <span class="logo-mark" id="logoFallback" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="2.5" width="20" height="27" rx="5" stroke="currentColor" stroke-width="2.2"/><path d="M11 12v7m0-7 5 5 5-5v7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="25" r="1" fill="currentColor"/></svg></span><img class="shop-logo-image" id="shopLogo" alt="Mobi Mania logo" hidden>
+        <span class="logo-text">MOBI MANIA </span>
+      </a>
+      <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#brands">Brands</a><a href="#products">All Phones</a><a href="#exchange">Exchange</a><a href="#why-us">Why Mobi Mania?</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="accountBtn" type="button">☻ <span id="accountLabel">Login</span></button>
+        <button class="nav-btn" id="cartBtn" type="button">Cart <span class="count" id="cartCount">0</span></button>
+        <button class="hamburger" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="top-search-row"><div class="wrap"><label class="search top-search"><input id="searchInput" type="search" placeholder="Search phones by name or brand…" aria-label="Search phones" /></label></div></div>
+  </header>
+
+  <main>
+
+    <section class="section wrap" id="offers">
+      <div class="offer-layout">
+        <div class="offer-player">
+          <video id="mobiOfferVideo" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="Mobi Mania special offer video">
+            <source src="./images/offer.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+        </div>
+
+      </div>
+    </section>
+    <section class="section wrap" id="brands">
+      <div class="section-head"><div><h2>Shop by brand</h2><p>Tap a brand to see the matching phones available below.</p></div><button class="btn btn-outline btn-small" type="button" id="allBrandsBtn">View all phones</button></div>
+      <div class="brand-grid" id="brandGrid">
+        <button class="brand-tile" data-brand="Apple"><span class="brand-logo-wrap"><img class="brand-logo" src="https://cdn.simpleicons.org/apple/111111" alt="Apple logo" loading="lazy"></span><span>Apple</span></button>
+        <button class="brand-tile" data-brand="Samsung"><span class="brand-logo-wrap"><img class="brand-logo" src="https://cdn.simpleicons.org/samsung/1428A0" alt="Samsung logo" loading="lazy"></span><span>Samsung</span></button>
+        <button class="brand-tile" data-brand="OnePlus"><span class="brand-logo-wrap"><img class="brand-logo" src="https://cdn.simpleicons.org/oneplus/F5010C" alt="OnePlus logo" loading="lazy"></span><span>OnePlus</span></button>
+        <button class="brand-tile" data-brand="Xiaomi"><span class="brand-logo-wrap"><img class="brand-logo" src="https://cdn.simpleicons.org/xiaomi/FF6900" alt="Xiaomi logo" loading="lazy"></span><span>Xiaomi</span></button>
+        <button class="brand-tile realme-tile" data-brand="Realme"><span class="brand-logo-wrap realme-wordmark" role="img" aria-label="realme logo">realme</span><span>Realme</span></button>
+        <button class="brand-tile" data-brand="Google"><span class="brand-logo-wrap"><img class="brand-logo" src="https://cdn.simpleicons.org/google/4285F4" alt="Google logo" loading="lazy"></span><span>Google</span></button>
+        <button class="brand-tile" data-brand="Vivo"><span class="brand-logo-wrap"><img class="brand-logo" src="https://cdn.simpleicons.org/vivo/415FFF" alt="Vivo logo" loading="lazy"></span><span>Vivo</span></button>
+        <button class="brand-tile" data-brand="Oppo"><span class="brand-logo-wrap"><img class="brand-logo" src="https://cdn.simpleicons.org/oppo/008B45" alt="Oppo logo" loading="lazy"></span><span>OPPO</span></button>
+      </div>
+    </section>
+
+    <section class="section wrap" id="products">
+      <div class="section-head"><div><h2 id="catalogHeading">Trending phones 🔥</h2><p id="catalogSubtitle">Popular picks and fresh deals from our current catalogue.</p></div></div>
+      <div class="catalog-tools"><select id="sortSelect" class="nav-btn" aria-label="Sort phones"><option value="featured">Sort: Featured</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option><option value="discount">Biggest discount</option></select></div>
+      <div class="filters" id="filters"><button class="filter-chip active" data-filter="All">All phones</button><button class="filter-chip" data-filter="Trending">Trending</button><button class="filter-chip" data-filter="iPhone">iPhone deals</button><button class="filter-chip" data-filter="Under20000">Under ₹20,000</button><button class="filter-chip" data-filter="BigDiscount">30%+ off</button></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    </section>
+
+    
+    <section class="section wrap" id="why-us">
+      <div class="section-head"><div><h2>Why shop with Mobi Mania?</h2><p>A simpler way to find a phone you'll love.</p></div></div>
+      <div class="trust-grid"><article class="trust-card"><div class="trust-icon">🔍</div><h3>Know the details</h3><p>Check storage, display, battery and condition notes before you ask to book.</p></article><article class="trust-card"><div class="trust-icon">💸</div><h3>Budget-friendly finds</h3><p>Explore sample offers from 10% to 50% off the listed original price.</p></article><article class="trust-card"><div class="trust-icon">💬</div><h3>Talk to the shop</h3><p>Booking requests are prepared for WhatsApp so your team can confirm stock and price.</p></article><article class="trust-card"><div class="trust-icon">♻️</div><h3>Give old tech a new life</h3><p>Get a rough exchange estimate, then send the details to Mobi Mania for review.</p></article></div>
+    </section>
+
+    <!-- Non-clickable trust badge, Google rating link, and auto-scrolling sample testimonials -->
+    <section class="section wrap mm-trust-reviews" id="mm-customer-trust">
+      <div class="mm-trust-badge" aria-label="Trusted by 10,000 plus customers">
+        <svg class="mm-shield" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 20 6v5.5c0 4.8-3.3 8-8 9.5-4.7-1.5-8-4.7-8-9.5V6l8-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.2 2.2 4.8-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Trusted by 10,000+ customers</span>
+      </div>
+
+      <div class="mm-google-rating">
+        <a href="https://www.google.com/search?kgmid=%2Fg%2F11h0_b1_00&hl=en-IN&q=MOBI%20MANIA&shem=epsd1%2Cltae%2Crimspwouoe&shndl=30&source=sh%2Fx%2Floc%2Fosrp%2Fm1%2F4&kgs=259f34c12c73a658" target="_blank" rel="noopener noreferrer" aria-label="Open Mobi Mania Google reviews">
+          <div class="mm-google-top">
+            <div class="mm-google-g" aria-hidden="true">G</div>
+            <div><h3>Mobi Mania</h3><p class="mm-google-sub">Google customer reviews</p></div>
+          </div>
+          <div class="mm-google-score"><strong>Google</strong><span class="mm-google-stars" aria-label="Google reviews">★★★★★</span></div>
+          <p class="mm-rating-caption">See customer ratings and reviews on Google.</p>
+          <span class="mm-google-cta">View Google Reviews ↗</span>
+        </a>
+      </div>
+
+      <div class="mm-reviews-heading">
+        <h2>What Our Customers Say</h2>
+        <p>Experiences shared by customers who purchased phones.</p>
+      </div>
+      <div class="mm-review-window" aria-label="Customer phone-purchase testimonials, scrolling upward">
+        <div class="mm-review-track">
+          <article class="mm-review-card"><p>“Found a phone that matched my budget. The team explained the condition and features clearly.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Phone purchase</small></div></div></article>
+          <article class="mm-review-card"><p>“The phone options were easy to compare, and I got help choosing the right model for daily use.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Choosing a phone</small></div></div></article>
+          <article class="mm-review-card"><p>“A smooth buying experience. I could check the phone details and ask questions before deciding.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Shopping experience</small></div></div></article>
+          <article class="mm-review-card"><p>“Helpful guidance on features and pricing made it easier to pick a phone within my budget.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Budget phone</small></div></div></article>
+          <!-- Duplicate set creates a seamless upward loop. Replace demo testimonials with real customer-approved reviews. -->
+          <article class="mm-review-card" aria-hidden="true"><p>“Found a phone that matched my budget. The team explained the condition and features clearly.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Phone purchase</small></div></div></article>
+          <article class="mm-review-card" aria-hidden="true"><p>“The phone options were easy to compare, and I got help choosing the right model for daily use.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Choosing a phone</small></div></div></article>
+          <article class="mm-review-card" aria-hidden="true"><p>“A smooth buying experience. I could check the phone details and ask questions before deciding.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Shopping experience</small></div></div></article>
+          <article class="mm-review-card" aria-hidden="true"><p>“Helpful guidance on features and pricing made it easier to pick a phone within my budget.”</p><div class="mm-review-person"><span class="mm-review-avatar">C</span><div><strong>Customer review · Demo</strong><span class="mm-review-stars">★★★★★</span><small>Budget phone</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section wrap" id="exchange">
+      <div class="exchange-box">
+        <div class="exchange-copy"><span class="eyebrow">♻️ SMART EXCHANGE</span><h2>Your old phone could help pay for your next one.</h2><p>Tell us about the phone you own. We'll show a rough estimate and let you send an exchange request to the shop on WhatsApp.</p><div class="exchange-list"><span>✓ Quick, no-pressure estimate</span><span>✓ Any brand can be requested</span><span>✓ Final value confirmed after inspection</span></div></div>
+        <form class="exchange-form-card" id="exchangeForm"><h3>Estimate your exchange</h3><p>Enter your phone details to get a sample value range.</p><div class="form-row"><div class="field"><label for="exchangeBrand">Phone brand</label><select id="exchangeBrand" required><option value="">Choose brand</option><option>Apple</option><option>Samsung</option><option>OnePlus</option><option>Xiaomi</option><option>Realme</option><option>Google</option><option>Vivo</option><option>OPPO</option><option>Nothing</option><option>Motorola</option><option>Tecno</option><option>Infinix</option><option>Redmi</option><option>Other</option></select></div><div class="field"><label for="exchangeModel">Model name</label><input id="exchangeModel" required placeholder="e.g. iPhone 12" /></div></div><div class="form-row"><div class="field"><label for="exchangeCondition">Condition</label><select id="exchangeCondition" required><option value="">Choose condition</option><option value="excellent">Excellent</option><option value="good">Good</option><option value="fair">Fair / scratches</option><option value="damaged">Damaged / needs repair</option></select></div><div class="field"><label for="exchangeStorage">Storage</label><select id="exchangeStorage"><option>Not sure</option><option>64 GB</option><option>128 GB</option><option>256 GB</option><option>512 GB</option><option>1 TB</option></select></div></div><div class="field hide" id="exchangeBatteryHealthWrap"><label for="exchangeBatteryHealth">Apple battery health (%)</label><input id="exchangeBatteryHealth" type="text" inputmode="text" maxlength="30" placeholder="Enter battery health, e.g. 87%" autocomplete="off" /></div><button class="btn btn-primary full" type="submit">Get estimate ↗</button><div class="estimate-result hide" id="estimateResult" aria-live="polite"></div><button class="btn btn-dark full hide" id="exchangeWhatsAppBtn" type="button" style="margin-top:10px">Send exchange request on WhatsApp</button></form>
+      </div>
+    </section>
+  </main>
+
+    <section class="section wrap" id="shop-location"><div class="section-head"><div><h2>Visit our shop</h2><p>Find Mobi Mania on Google Maps and get directions to our shop.</p></div><a class="btn btn-outline btn-small" id="openMapLink" href="https://maps.google.com" target="_blank" rel="noopener">Open in Google Maps ↗</a></div><div class="map-frame"><iframe id="shopMap" title="Mobi Mania shop location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=MOBI%20MANIA%2C%20Sodepur%20Rd%2C%20Basunagar%2C%20Madhyamgram%2C%20Kolkata%2C%20West%20Bengal%20700129&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe></div><p class="fineprint">Use the Google Maps button for the shop’s shared live location.</p></section>
+
+  <footer><div class="wrap"><div class="footer-grid"><div class="footer-brand"><a href="#home" class="logo"><img class="shop-logo-image footer-shop-logo" id="shopLogoFooter" alt="Mobi Mania logo" hidden><span class="logo-mark footer-logo-fallback" id="logoFooterFallback"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="2.5" width="20" height="27" rx="5" stroke="currentColor" stroke-width="2.2"/><path d="M11 12v7m0-7 5 5 5-5v7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="25" r="1" fill="currentColor"/></svg></span><span>mobi mania</span></a><p>Good phones deserve a second life. Explore pre-loved smartphones, ask about a listing, or request an exchange estimate.</p><a class="btn btn-lime btn-small" href="https://wa.me/916290520530" target="_blank" rel="noopener">WhatsApp the shop ↗</a></div><div class="footer-col"><h3>Explore</h3><a href="#products">All phones</a><a href="#brands">Shop by brand</a><a href="#offers">Special offers</a><a href="#exchange">Phone exchange</a></div><div class="footer-col"><h3>Contact Mobi Mania</h3><p>WhatsApp: <a href="https://wa.me/916290520530" target="_blank" rel="noopener">62905 20530</a></p><p>For booking, ask us to confirm availability, condition, final price and advance payment terms.</p></div></div><div class="footer-bottom"><span>© <span id="yearNow"></span> Mobi Mania. All rights reserved.</span><span>Built for GitHub Pages • Static demo</span></div><p class="disclaimer">Important: This website does not process payments. Customer login uses Firebase Authentication; cart and listing tools run in your browser. Product availability and prices must be confirmed by the shop.</p></div></footer>
+
+  <!-- Product details -->
+  <div class="overlay" id="detailOverlay" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><div class="dialog wide"><div class="dialog-head"><div><h2>Phone details</h2><p>Specifications, price and related phones.</p></div><button class="close-btn" data-close="detailOverlay" aria-label="Close">×</button></div><div class="dialog-content" id="detailContent"></div></div></div>
+  <!-- Login / create account -->
+  <div class="overlay" id="accountOverlay" role="dialog" aria-modal="true" aria-labelledby="accountModalTitle"><div class="dialog"><div class="dialog-head"><div><h2 id="accountModalTitle">Welcome to Mobi Mania</h2><p>Sign in securely with your email and password.</p></div><button class="close-btn" data-close="accountOverlay" aria-label="Close">×</button></div><div class="dialog-content"><div class="tabs"><button type="button" class="tab active" data-account-tab="login">Login</button><button type="button" class="tab" data-account-tab="create">Create account</button></div><form id="accountForm"><div class="field hide" id="accountNameWrap"><label for="accountName">Full name</label><input id="accountName" type="text" autocomplete="name" placeholder="Enter your full name" /></div><div class="field"><label for="accountEmail">Email address</label><input id="accountEmail" type="email" autocomplete="email" required placeholder="Enter your email address" /></div><div class="field"><label for="accountPassword">Password</label><input id="accountPassword" type="password" autocomplete="current-password" minlength="6" required placeholder="Enter password (at least 6 characters)" /></div><div class="field hide" id="accountConfirmWrap"><label for="accountConfirmPassword">Confirm password</label><input id="accountConfirmPassword" type="password" autocomplete="new-password" minlength="6" placeholder="Re-enter your password" /></div><button class="btn btn-primary full" id="accountSubmit" type="submit">Login</button><button class="btn btn-outline full" id="forgotPasswordBtn" type="button" style="margin-top:10px">Forgot password?</button><p class="dialog-footnote">Email and password sign-in must be enabled in Firebase Authentication.</p></form><div id="accountLoggedIn" class="hide"><div class="success-message" id="loggedInText"></div><button class="btn btn-outline full" id="accountCartBtn" type="button" style="margin-top:12px">🛒 View Cart <span class="count" id="accountCartCount">0</span></button><div class="field" style="margin-top:14px"><label for="languageSelect">🌐 Change language</label><select id="languageSelect" class="input" aria-label="Change language"><option value="en">English</option><option value="bn">বাংলা (Bengali)</option><option value="hi">हिन्दी (Hindi)</option></select><small class="helper" id="languagePreferenceNote">Choose your preferred language.</small></div><button class="btn btn-outline full" id="logoutBtn" type="button" style="margin-top:12px">Log out</button></div></div></div></div>
+  <!-- Cart -->
+  <div class="overlay" id="cartOverlay" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="dialog"><div class="dialog-head"><div><h2 id="cartTitle">Your cart</h2><p>Items you're considering.</p></div><button class="close-btn" data-close="cartOverlay" aria-label="Close">×</button></div><div class="dialog-content"><div id="cartItems"></div><div id="cartSummary" class="hide"><div class="cart-total"><span>Estimated total</span><span id="cartTotal">₹0</span></div><button class="btn btn-primary full" id="cartCheckoutBtn" type="button">Enquire on WhatsApp ↗</button><p class="dialog-footnote">No payment is taken here. The shop will confirm availability, final price and any booking advance.</p></div></div></div></div>
+  <!-- Advance booking -->
+  <div class="overlay" id="bookingOverlay" role="dialog" aria-modal="true" aria-labelledby="bookingTitle"><div class="dialog"><div class="dialog-head"><div><h2 id="bookingTitle">Reserve this phone</h2><p>Send an advance-booking request directly to Mobi Mania.</p></div><button class="close-btn" data-close="bookingOverlay" aria-label="Close">×</button></div><div class="dialog-content"><div id="bookingProductSummary" class="success-message" style="margin:0 0 16px"></div><form id="bookingForm"><div class="field"><label for="bookingName">Your name</label><input id="bookingName" required autocomplete="name" placeholder="Enter your name" /></div><div class="field"><label for="bookingPhone">Your WhatsApp / phone number</label><input id="bookingPhone" type="tel" required inputmode="tel" placeholder="Enter contact number" /></div><div class="field"><label for="bookingAdvance">Proposed advance (₹)</label><input id="bookingAdvance" type="number" min="0" step="100" value="2000" required /></div><div class="field"><label for="bookingNote">Note (optional)</label><textarea id="bookingNote" placeholder="Preferred time, questions, etc."></textarea></div><button class="btn btn-primary full" type="submit">Continue to WhatsApp ↗</button><p class="dialog-footnote">The advance amount is only a proposal in the message, not a payment. Do not send money until the shop confirms the terms directly.</p></form></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script>
+    'use strict';
+    const WHATSAPP_NUMBER = '916290520530'; // India country code + shop number 62905 20530
+    // ===== IMAGE PATHS: change only the text inside quotes; upload files into the GitHub images/ folder. =====
+    const SHOP_LOGO_PATH = './images/mobi%20mania%20logo.jpg'; // Header + footer logo. Example: images/mobi-mania-logo.png
+    const SHOP_POSTER_PATH = 'images/poster.jpg'; // Main promotional poster. Leave '' to keep the text placeholder.
+    const CATEGORY_IMAGE_PATHS = {
+      flagship: 'images/flagship-cover.jpg',
+      gaming: 'images/gaming-cover.jpg',
+      camera: 'images/camera-cover.jpg'
+    };
+    const SHOP_LOCATION_QUERY = 'MOBI MANIA, Sodepur Rd, Basunagar, Madhyamgram, Kolkata, West Bengal 700129'; // Map search label; direct directions use the shop's shared Google Maps link
+    const SHOP_LOCATION_URL = 'https://maps.app.goo.gl/tF7FSJTJzyTsZ6V59'; // Direct live Google Maps place link
+    const STORAGE_KEYS = {products:'mobiManiaProducts_v1',cart:'mobiManiaCart_v1',user:'mobiManiaDemoUser_v1'};
+    const brandHue = {Apple:'#e4e5eb',Samsung:'#e6f5ff',OnePlus:'#ffe9e1',Xiaomi:'#fff0df',Realme:'#ffe9f0',Google:'#e8f6ec',Vivo:'#e8f7f5',OPPO:'#e8f7f5',Other:'#f0edff'};
+    function money(value){return '₹'+Number(value||0).toLocaleString('en-IN',{maximumFractionDigits:0});}
+    function esc(value){return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+    function slugSeed(text){let h=0;for(const c of String(text)){h=(h*31+c.charCodeAt(0))|0;}return Math.abs(h);}
+    function placeholderImage(name,brand){const hue=(slugSeed(name)%55)+220;const accent={Apple:'#252a3c',Samsung:'#4d93d3',OnePlus:'#e74c3c',Xiaomi:'#ff8c32',Realme:'#f2c342',Google:'#4b9b70',Vivo:'#2e9bd3',OPPO:'#2a9d8f',Other:'#6954f5'}[brand]||'#6954f5';const safe=String(name||'Mobi').replace(/[<>&"']/g,'').slice(0,25);const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="480" height="520" viewBox="0 0 480 520"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(${hue},80%,97%)"/><stop offset="1" stop-color="hsl(${hue+35},75%,90%)"/></linearGradient><linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${accent}"/><stop offset=".55" stop-color="#8e81ff"/><stop offset="1" stop-color="#e5a6ff"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#16152a" flood-opacity=".25"/></filter></defs><rect width="480" height="520" rx="28" fill="url(#bg)"/><circle cx="65" cy="70" r="70" fill="#fff" opacity=".45"/><circle cx="430" cy="450" r="100" fill="#fff" opacity=".3"/><g filter="url(#shadow)" transform="translate(145 25) rotate(7 95 220)"><rect x="0" y="0" width="190" height="420" rx="34" fill="#171824"/><rect x="7" y="7" width="176" height="406" rx="29" fill="#f1f1f7"/><rect x="13" y="13" width="164" height="394" rx="25" fill="url(#screen)"/><circle cx="90" cy="110" r="63" fill="#ffffff" opacity=".14"/><circle cx="125" cy="220" r="85" fill="#fff" opacity=".13"/><path d="M15 300 Q90 210 175 300 L175 382 Q90 440 15 382Z" fill="#ffffff" opacity=".12"/><rect x="62" y="8" width="66" height="14" rx="7" fill="#171824"/><circle cx="95" cy="394" r="3" fill="#ffffff" opacity=".65"/></g><text x="240" y="478" fill="#22243a" font-size="19" font-family="Arial,sans-serif" font-weight="700" text-anchor="middle">${safe}</text><text x="240" y="500" fill="#777b90" font-size="12" font-family="Arial,sans-serif" text-anchor="middle">MOBI MANIA • DEMO IMAGE</text></svg>`;return 'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg);}
+    // PRODUCT PHOTOS: put image:'images/your-phone.jpg' in each phone object below.
+    // Upload the photo to the repository's images/ folder; filenames and uppercase/lowercase must match.
+    // For every phone, add/change image:'images/phone-file.jpg' before the closing } to show its photo.
+    const starterProducts = [
+      {id:'MOTOROLA G45',brand:'Motorola',name:'Motorola G45',originalPrice:19000,discount:25,storage:'8/128 GB',condition:'Very Good',battery:'5000mah',display:'6.4 Super amoled',processor:'Jani na',description:'Popular jani na',trending:true, image:"images/motog45.jpg",},
+      {id:'VIVO',brand:'Vivo',name:'vivo Y11 5G',originalPrice:20000,discount:20,storage:'4/64 GB',condition:'Open Box',battery:'6500 mAh',display:'6.74 - inch HD+ Display',processor:'Mediatek Dimoncity 6300',description:'Compact Vivo flagship with a vibrant display, versatile cameras and 5G support.',trending:true, image:"images/Vivoy11.jpg",},
+      {id:'demo-oneplus11r',brand:'OnePlus',name:'OnePlus 11R 5G',originalPrice:28999,discount:20,storage:'128 GB',condition:'Very Good',battery:'5000 mAh',display:'6.74-inch AMOLED 120Hz',processor:'Snapdragon 8+ Gen 1',description:'Fast performance, a fluid screen and a large battery for daily use.',trending:true},
+      {id:'demo-redmi12pro',brand:'Xiaomi',name:'Redmi Note 12 Pro+',originalPrice:24999,discount:35,storage:'256 GB',condition:'Good',battery:'5000 mAh',display:'6.67-inch Flow AMOLED',processor:'MediaTek Dimensity 1080',description:'A feature-packed mid-range phone with a bright display and plenty of storage.',trending:true},
+      {id:'demo-realme11pro',brand:'Realme',name:'realme 11 Pro+',originalPrice:27999,discount:40,storage:'256 GB',condition:'Very Good',battery:'5000 mAh',display:'6.7-inch AMOLED 120Hz',processor:'MediaTek Dimensity 7050',description:'Curved AMOLED display and a camera-focused feature set at a second-hand price.',trending:false},
+      {id:'demo-pixel7a',brand:'Google',name:'Pixel 7a',originalPrice:31999,discount:15,storage:'128 GB',condition:'Like New',battery:'4385 mAh',display:'6.1-inch OLED 90Hz',processor:'Google Tensor G2',description:'A clean Android experience with useful smart features and capable cameras.',trending:true},
+      {id:'demo-v27',brand:'Vivo',name:'Vivo V27 5G',originalPrice:32999,discount:45,storage:'128 GB',condition:'Good',battery:'4600 mAh',display:'6.78-inch AMOLED 120Hz',processor:'MediaTek Dimensity 7200',description:'Slim design with a vivid curved display and selfie-friendly cameras.',trending:false},
+      {id:'demo-iphone12',brand:'Apple',name:'iPhone 12',originalPrice:29900,discount:50,storage:'128 GB',condition:'Fair',battery:'82%',display:'6.1-inch Super Retina XDR',processor:'A14 Bionic',description:'A familiar iPhone experience with 5G support. Check the listed condition before booking.',trending:true},
+      {id:'demo-oppo-reno',brand:'OPPO',name:'OPPO Reno 8 5G',originalPrice:26999,discount:20,storage:'128 GB',condition:'Good',battery:'4500 mAh',display:'6.4-inch AMOLED',processor:'MediaTek Dimensity 1300',description:'Stylish Reno phone with fast charging and a colourful AMOLED display.',trending:false},
+      {id:'demo-s21fe',brand:'Samsung',name:'Galaxy S21 FE 5G',originalPrice:31999,discount:30,storage:'128 GB',condition:'Very Good',battery:'4500 mAh',display:'6.4-inch Dynamic AMOLED 2X',processor:'Exynos 2100',description:'A flexible Samsung phone with a smooth high-refresh-rate display and multiple cameras.',trending:false},
+      {id:'demo-nordce3',brand:'OnePlus',name:'OnePlus Nord CE 3',originalPrice:24999,discount:10,storage:'128 GB',condition:'Like New',battery:'5000 mAh',display:'6.7-inch AMOLED 120Hz',processor:'Snapdragon 782G',description:'A balanced everyday phone with a smooth display and long battery life.',trending:false},
+      {id:'demo-mi11x',brand:'Xiaomi',name:'Mi 11X 5G',originalPrice:22999,discount:25,storage:'128 GB',condition:'Good',battery:'4520 mAh',display:'6.67-inch AMOLED 120Hz',processor:'Snapdragon 870',description:'A performance-focused Xiaomi phone with a fluid screen and capable chipset.',trending:false}
+    ];
+    function loadProducts(){
+      // Keep saved listings and starter/demo phones. Refresh the Motorola G45
+      // image path from the current HTML so an old saved image cannot override it.
+      const defaults=starterProducts.map(p=>({...p,price:Math.round(p.originalPrice*(100-p.discount)/100),image:p.image||placeholderImage(p.name,p.brand)}));
+      try{
+        const raw=localStorage.getItem(STORAGE_KEYS.products);
+        if(raw){
+          const stored=JSON.parse(raw);
+          if(Array.isArray(stored)&&stored.length){
+            const defaultById=new Map(defaults.map(p=>[String(p.id),p]));
+            const refreshed=stored.map(p=>{
+              const current=defaultById.get(String(p.id));
+              if(String(p.id)==='MOTOROLA G45' && current) return {...p,image:current.image};
+              return p;
+            });
+            const storedIds=new Set(refreshed.map(p=>String(p.id)));
+            return [...refreshed,...defaults.filter(p=>!storedIds.has(String(p.id)))];
+          }
+        }
+      }catch(e){console.warn('Could not load saved listings',e)}
+      return defaults;
+    }
+    let products=loadProducts();
+    products=products.map(p=>({...p,price:Number(p.price)||Math.round(Number(p.originalPrice||0)*(100-Number(p.discount||0))/100),image:p.image||placeholderImage(p.name,p.brand)}));
+    let activeFilter='All',activeBrand='',accountMode='login',selectedBookingProduct=null,activeDetailProduct=null,exchangeRequest=null,toastTimer=null;
+    function saveProducts(){try{localStorage.setItem(STORAGE_KEYS.products,JSON.stringify(products));}catch(e){showToast('Browser storage is full. Try a smaller photo or fewer uploaded listings.');}}
+    function loadCart(){try{return JSON.parse(localStorage.getItem(STORAGE_KEYS.cart)||'[]')}catch(e){return []}}
+    let cart=loadCart();function saveCart(){try{localStorage.setItem(STORAGE_KEYS.cart,JSON.stringify(cart));}catch(e){}renderCartCount();}
+    function getProduct(id){return products.find(p=>p.id===id)}
+    function productImage(p){return p.image||placeholderImage(p.name,p.brand)}
+    function showToast(message){const el=document.getElementById('toast');el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2600)}
+    function openOverlay(id){const el=document.getElementById(id);if(!el)return;el.classList.add('open');document.body.classList.add('locked');const first=el.querySelector('input:not([type=file]),select,textarea,button');if(first)setTimeout(()=>first.focus({preventScroll:true}),60)}
+    function closeOverlay(id){const el=document.getElementById(id);if(el)el.classList.remove('open');if(!document.querySelector('.overlay.open'))document.body.classList.remove('locked')}
+    function renderProducts(){const grid=document.getElementById('productGrid');const q=document.getElementById('searchInput').value.trim().toLowerCase();let list=products.filter(p=>{const text=(p.name+' '+p.brand+' '+(p.storage||'')).toLowerCase();if(q&&!text.includes(q))return false;if(!q&&activeBrand&&p.brand!==activeBrand)return false;if(!q&&activeFilter==='Trending'&&!p.trending)return false;if(!q&&activeFilter==='iPhone'&&p.brand!=='Apple')return false;if(!q&&activeFilter==='Under20000'&&p.price>=20000)return false;if(!q&&activeFilter==='BigDiscount'&&p.discount<30)return false;return true});const sort=document.getElementById('sortSelect').value;if(sort==='low')list.sort((a,b)=>a.price-b.price);if(sort==='high')list.sort((a,b)=>b.price-a.price);if(sort==='discount')list.sort((a,b)=>b.discount-a.discount);if(sort==='featured')list.sort((a,b)=>(Number(b.trending)-Number(a.trending))||products.indexOf(a)-products.indexOf(b));document.body.classList.toggle('searching',!!q);document.getElementById('catalogHeading').textContent=q?'Search results for “'+q+'”':activeBrand?activeBrand+' phones':activeFilter==='Trending'?'Trending phones 🔥':activeFilter==='iPhone'?'iPhone deals':'Available phones';document.getElementById('catalogSubtitle').textContent=activeBrand?'Available listings from '+activeBrand+'. Tap a phone to view its details.':'Explore available phones, prices and discounts. Tap a phone for full specifications.';document.querySelectorAll('.brand-tile').forEach(b=>b.classList.toggle('active',b.dataset.brand===activeBrand));document.querySelectorAll('.filter-chip').forEach(b=>b.classList.toggle('active',b.dataset.filter===activeFilter));if(!list.length){grid.innerHTML='<div class="empty-state"><h3>No matching phones yet</h3><p>Try another brand or search term. New stock is added by the shop through GitHub.</p></div>';return;}grid.innerHTML=list.map(p=>`<article class="product-card"><div class="product-visual" data-detail="${esc(p.id)}" role="button" tabindex="0" aria-label="View ${esc(p.name)} details"><img loading="lazy" src="${productImage(p)}" alt="${esc(p.name)} phone"/><span class="discount-badge">${Number(p.discount)||0}% OFF</span><span class="condition-badge">${esc(p.condition||'Pre-owned')}</span></div><div class="product-body"><div class="product-brand">${esc(p.brand)}</div><h3 class="product-title">${esc(p.name)}</h3><p class="product-mini">${esc(p.storage||'Storage not listed')} · Pre-owned</p><div class="price-row"><span class="price">${money(p.price)}</span><span class="old-price">${money(p.originalPrice)}</span></div><div class="card-actions"><button type="button" class="btn btn-outline" data-detail="${esc(p.id)}">View details</button><button type="button" class="btn btn-primary" data-cart="${esc(p.id)}">＋ Cart</button></div></div></article>`).join('');}
+    function setFilter(filter){activeFilter=filter;activeBrand='';renderProducts();}
+    function addToCart(id){const p=getProduct(id);if(!p)return;const existing=cart.find(i=>i.id===id);if(existing)existing.qty+=1;else cart.push({id,qty:1});saveCart();showToast(p.name+' added to your cart');}
+    function renderCartCount(){const count=cart.reduce((n,i)=>n+i.qty,0);document.getElementById('cartCount').textContent=count;const cc=document.getElementById('accountCartCount');if(cc)cc.textContent=count;}
+    function renderCart(){const root=document.getElementById('cartItems'),summary=document.getElementById('cartSummary');cart=cart.filter(i=>getProduct(i.id));saveCart();if(!cart.length){root.innerHTML='<div class="empty-state"><h3>Your cart is empty</h3><p>Find a phone you like and add it here.</p><button class="btn btn-primary btn-small" type="button" data-close="cartOverlay">Explore phones</button></div>';summary.classList.add('hide');return;}root.innerHTML=cart.map(i=>{const p=getProduct(i.id);return `<div class="cart-item"><img src="${productImage(p)}" alt="${esc(p.name)}"/><div><h4>${esc(p.name)}</h4><p>${i.qty} × ${money(p.price)}</p><strong>${money(p.price*i.qty)}</strong></div><button class="remove-btn" type="button" data-remove-cart="${esc(p.id)}">Remove</button></div>`}).join('');const total=cart.reduce((n,i)=>n+getProduct(i.id).price*i.qty,0);document.getElementById('cartTotal').textContent=money(total);summary.classList.remove('hide');}
+    function showCart(){renderCart();openOverlay('cartOverlay')}
+    function addDetailActionHandlers(){document.querySelectorAll('[data-detail]').forEach(el=>{el.addEventListener('click',()=>openDetails(el.dataset.detail));if(el.tagName!=='BUTTON')el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDetails(el.dataset.detail)}})});document.querySelectorAll('[data-cart]').forEach(el=>el.addEventListener('click',()=>addToCart(el.dataset.cart)));}
+    function openDetails(id){
+      const p=getProduct(id); if(!p)return;
+      activeDetailProduct=p;
+      const related=products.filter(x=>x.id!==p.id&&(x.brand===p.brand||x.trending)).slice(0,3);
+      const specs=[['Brand',p.brand],['Storage',p.storage||'Not listed'],['Condition',p.condition||'Pre-owned'],['Battery',p.battery||'Ask the shop'],['Display',p.display||'Ask the shop'],['Processor',p.processor||'Ask the shop']];
+      const photo=productImage(p);
+      document.getElementById('detailContent').innerHTML=`<div class="product-detail"><div class="detail-gallery"><div class="detail-image"><img id="detailMainImage" src="${esc(photo)}" alt="${esc(p.name)} photo"/></div></div><div class="detail-info"><span class="product-brand">${esc(p.brand)} · PRE-OWNED</span><h2 id="detailTitle">${esc(p.name)}</h2><span class="pill">${Number(p.discount)||0}% OFF</span><p class="detail-desc">${esc(p.description||'Contact the shop for more information about this phone.')}</p><div class="detail-price"><span class="price">${money(p.price)}</span><span class="old-price">${money(p.originalPrice)}</span></div><div class="spec-list">${specs.map(([k,v])=>`<div class="spec-item"><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div><p class="helper">Condition and specifications should be confirmed with the shop before booking. Stock and final price are subject to confirmation.</p><div class="detail-actions"><button class="btn btn-primary" type="button" id="detailBuyNow">Buy now / Book</button><button class="btn btn-outline" type="button" id="detailAddCart">＋ Add to cart</button></div></div></div><h3 class="related-heading">You may also like</h3><div class="related-grid">${related.length?related.map(x=>`<button class="related-item" type="button" data-related="${esc(x.id)}"><img src="${productImage(x)}" alt=""/><span><strong>${esc(x.name)}</strong><span>${money(x.price)}</span></span></button>`).join(''):'<p class="helper">More phones will appear here as stock is added.</p>'}</div>`;
+      openOverlay('detailOverlay');
+      document.getElementById('detailBuyNow').addEventListener('click',()=>openBooking(p.id));
+      document.getElementById('detailAddCart').addEventListener('click',()=>addToCart(p.id));
+      document.querySelectorAll('[data-related]').forEach(el=>el.addEventListener('click',()=>openDetails(el.dataset.related)));
+    }
+    function openBooking(id){const p=getProduct(id);if(!p)return;selectedBookingProduct=p;document.getElementById('bookingProductSummary').innerHTML=`<strong>${esc(p.name)}</strong><br>Offer price: <strong>${money(p.price)}</strong> <span style="text-decoration:line-through;color:#6b7280">${money(p.originalPrice)}</span><br><span style="font-size:.8rem">${p.discount}% sample discount · Please confirm stock with the shop.</span>`;const user=loadUser();if(user&&!document.getElementById('bookingName').value)document.getElementById('bookingName').value=user.name||'';closeOverlay('detailOverlay');openOverlay('bookingOverlay');}
+    function waUrl(message){return 'https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(message)}
+    // Firebase Authentication: email/password + Google (no phone OTP/SMS).
+    // Keep this config matched to the Firebase Web App settings.
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPxIC1vPtKVYri2rEC26vR_66yBwRSySg",
+      authDomain: "mobi-mania-5a351.firebaseapp.com",
+      projectId: "mobi-mania-5a351",
+      storageBucket: "mobi-mania-5a351.firebasestorage.app",
+      messagingSenderId: "232557049492",
+      appId: "1:232557049492:web:6545567aaac66883a5e681"
+    };
+    let firebaseAuth = null;
+    try {
+      if (window.firebase && !firebase.apps.length) firebase.initializeApp(firebaseConfig);
+      if (window.firebase) firebaseAuth = firebase.auth();
+    } catch (err) { console.error("Firebase initialization error:", err); }
+
+    function loadUser(){try{return JSON.parse(localStorage.getItem(STORAGE_KEYS.user)||'null')}catch(e){return null}}
+    function saveUser(user){try{localStorage.setItem(STORAGE_KEYS.user,JSON.stringify(user))}catch(e){}}
+
+
+    function accountErrorMessage(err){
+      const messages={
+        'auth/email-already-in-use':'This email already has an account. Please log in instead.',
+        'auth/invalid-email':'Please enter a valid email address.',
+        'auth/weak-password':'Choose a stronger password with at least 6 characters.',
+        'auth/user-not-found':'No account found with this email. Create an account first.',
+        'auth/invalid-credential':'Email or password is incorrect. Please check and try again.',
+        'auth/wrong-password':'Email or password is incorrect. Please check and try again.',
+        'auth/too-many-requests':'Too many attempts. Please wait a little and try again.',
+        'auth/unauthorized-domain':'This website domain is not authorized in Firebase. Add your GitHub Pages domain in Firebase Authentication settings.',
+        'auth/operation-not-allowed':'Enable this sign-in method in Firebase Console → Authentication → Sign-in method.'
+      };
+      return messages[err.code] || err.message || 'Something went wrong. Please try again.';
+    }
+    function updateAccountUI(){
+      const user=loadUser();
+      document.getElementById('accountLabel').textContent=user?'Account':'Login';
+      document.getElementById('accountForm').classList.toggle('hide',!!user);
+      document.querySelector('.tabs').classList.toggle('hide',!!user);
+      document.getElementById('accountLoggedIn').classList.toggle('hide',!user);
+      if(user) document.getElementById('loggedInText').textContent='Hey '+(user.name||user.email||'Mobi Mania customer');
+      const accountCartCount=document.getElementById('accountCartCount');if(accountCartCount)accountCartCount.textContent=String(cart.reduce((n,i)=>n+i.qty,0));
+    }
+    const LANGUAGE_PREF_KEY='mobiManiaPreferredLanguage';
+    const languageSelect=document.getElementById('languageSelect');
+    if(languageSelect){
+      try{languageSelect.value=localStorage.getItem(LANGUAGE_PREF_KEY)||'en';}catch(e){}
+      languageSelect.addEventListener('change',()=>{
+        try{localStorage.setItem(LANGUAGE_PREF_KEY,languageSelect.value);}catch(e){}
+        const labels={en:'Language preference saved. More website translations can be added.',bn:'ভাষার পছন্দ সংরক্ষণ করা হয়েছে। ওয়েবসাইটের আরও অনুবাদ যোগ করা যেতে পারে।',hi:'भाषा की पसंद सेव हो गई। वेबसाइट के और अनुवाद जोड़े जा सकते हैं।'};
+        const note=document.getElementById('languagePreferenceNote');if(note)note.textContent=labels[languageSelect.value]||labels.en;
+      });
+    }
+
+    function setAccountMode(mode){
+      accountMode=mode;
+      document.querySelectorAll('[data-account-tab]').forEach(t=>t.classList.toggle('active',t.dataset.accountTab===mode));
+      document.getElementById('accountModalTitle').textContent=mode==='login'?'Welcome to Mobi Mania':'Create your Mobi Mania account';
+      document.getElementById('accountNameWrap').classList.toggle('hide',mode!=='create');
+      document.getElementById('accountConfirmWrap').classList.toggle('hide',mode!=='create');
+      document.getElementById('accountName').required=mode==='create';
+      document.getElementById('accountConfirmPassword').required=mode==='create';
+      document.getElementById('accountPassword').autocomplete=mode==='login'?'current-password':'new-password';
+      document.getElementById('accountSubmit').textContent=mode==='login'?'Login':'Create account';
+      document.getElementById('forgotPasswordBtn').classList.toggle('hide',mode!=='login');
+    }
+    function openAccount(){updateAccountUI();setAccountMode(accountMode||'login');openOverlay('accountOverlay')}
+    document.getElementById('menuToggle').addEventListener('click',()=>{const nav=document.getElementById('navLinks');const opened=nav.classList.toggle('mobile-open');document.getElementById('menuToggle').setAttribute('aria-expanded',String(opened));const searchRow=document.querySelector('.top-search-row');if(searchRow)searchRow.classList.toggle('menu-search-hidden',opened);});
+    document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('navLinks').classList.remove('mobile-open');document.getElementById('menuToggle').setAttribute('aria-expanded','false');const searchRow=document.querySelector('.top-search-row');if(searchRow)searchRow.classList.remove('menu-search-hidden')}));
+    document.getElementById('accountBtn').addEventListener('click',openAccount);document.getElementById('cartBtn').addEventListener('click',showCart);document.getElementById('accountCartBtn')?.addEventListener('click',()=>{closeOverlay('accountOverlay');showCart();});document.getElementById('allBrandsBtn').addEventListener('click',()=>{activeBrand='';setFilter('All');document.getElementById('products').scrollIntoView({behavior:'smooth'})});
+    document.getElementById('brandGrid').addEventListener('click',e=>{const tile=e.target.closest('[data-brand]');if(!tile)return;activeBrand=tile.dataset.brand;activeFilter='All';renderProducts();document.getElementById('products').scrollIntoView({behavior:'smooth'});});
+    document.getElementById('filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(b)setFilter(b.dataset.filter)});document.getElementById('searchInput').addEventListener('input',renderProducts);document.getElementById('sortSelect').addEventListener('change',renderProducts);document.getElementById('productGrid').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail){openDetails(detail.dataset.detail);return;}const add=e.target.closest('[data-cart]');if(add)addToCart(add.dataset.cart)});document.getElementById('productGrid').addEventListener('keydown',e=>{const detail=e.target.closest('[data-detail]');if(detail&&(e.key==='Enter'||e.key===' ')){e.preventDefault();openDetails(detail.dataset.detail)}});
+    document.body.addEventListener('click',e=>{const close=e.target.closest('[data-close]');if(close)closeOverlay(close.dataset.close);const remove=e.target.closest('[data-remove-cart]');if(remove){cart=cart.filter(i=>i.id!==remove.dataset.removeCart);saveCart();renderCart();showToast('Item removed from cart');}});
+    document.querySelectorAll('.overlay').forEach(overlay=>overlay.addEventListener('click',e=>{if(e.target===overlay)closeOverlay(overlay.id)}));document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.overlay.open').forEach(el=>closeOverlay(el.id))});
+    document.querySelectorAll('[data-account-tab]').forEach(tab=>tab.addEventListener('click',()=>setAccountMode(tab.dataset.accountTab)));
+    document.getElementById('accountForm').addEventListener('submit',async e=>{
+      e.preventDefault();
+      if(!firebaseAuth){showToast('Firebase could not initialize. Check the Web App configuration.');return;}
+      const email=document.getElementById('accountEmail').value.trim();
+      const password=document.getElementById('accountPassword').value;
+      const submit=document.getElementById('accountSubmit');
+      if(accountMode==='create'){
+        const name=document.getElementById('accountName').value.trim();
+        const confirm=document.getElementById('accountConfirmPassword').value;
+        if(password.length<6){showToast('Password must contain at least 6 characters.');return;}
+        if(password!==confirm){showToast('Passwords do not match.');return;}
+        submit.disabled=true;submit.textContent='Creating account…';
+        try{
+          const credential=await firebaseAuth.createUserWithEmailAndPassword(email,password);
+          if(name)await credential.user.updateProfile({displayName:name});
+          saveUser({uid:credential.user.uid,email:credential.user.email,name:name||credential.user.displayName||'',verified:true});
+          updateAccountUI();showToast('Account created successfully. You are logged in.');
+        }catch(err){console.error('Create account error:',err);showToast(accountErrorMessage(err));}
+        finally{submit.disabled=false;submit.textContent=accountMode==='login'?'Login':'Create account';}
+      }else{
+        submit.disabled=true;submit.textContent='Logging in…';
+        try{
+          const credential=await firebaseAuth.signInWithEmailAndPassword(email,password);
+          const user=credential.user;
+          saveUser({uid:user.uid,email:user.email,name:user.displayName||'',verified:true});
+          updateAccountUI();showToast('Login successful. Welcome to Mobi Mania!');
+        }catch(err){console.error('Login error:',err);showToast(accountErrorMessage(err));}
+        finally{submit.disabled=false;submit.textContent=accountMode==='login'?'Login':'Create account';}
+      }
+    });
+    document.getElementById('forgotPasswordBtn').addEventListener('click',async()=>{
+      if(!firebaseAuth){showToast('Firebase could not initialize. Check the Web App configuration.');return;}
+      const email=document.getElementById('accountEmail').value.trim();
+      if(!email){showToast('Enter your email address first, then tap Forgot password.');document.getElementById('accountEmail').focus();return;}
+      try{await firebaseAuth.sendPasswordResetEmail(email);showToast('Password reset email sent. Check your inbox and spam folder.');}
+      catch(err){console.error('Password reset error:',err);showToast(accountErrorMessage(err));}
+    });
+    document.getElementById('logoutBtn').addEventListener('click',async()=>{
+      try{if(firebaseAuth)await firebaseAuth.signOut();}catch(e){console.warn(e)}
+      localStorage.removeItem(STORAGE_KEYS.user);updateAccountUI();setAccountMode('login');showToast('Logged out');
+    });
+    if(firebaseAuth){
+      firebaseAuth.onAuthStateChanged(user=>{
+        if(user){saveUser({uid:user.uid,email:user.email||'',name:user.displayName||'',verified:true});}
+        else {localStorage.removeItem(STORAGE_KEYS.user);}
+        updateAccountUI();
+      });
+    }
+
+    document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();if(!selectedBookingProduct)return;const p=selectedBookingProduct,name=document.getElementById('bookingName').value.trim(),phone=document.getElementById('bookingPhone').value.trim(),advance=document.getElementById('bookingAdvance').value,note=document.getElementById('bookingNote').value.trim();const message=`Hello Mobi Mania! I want to make an advance booking enquiry.\n\nPhone: ${p.name}\nBrand: ${p.brand}\nListed offer price: ${money(p.price)} (${p.discount}% sample discount)\nProposed advance: ${money(advance)}\nCustomer name: ${name}\nContact number: ${phone}\nNote: ${note||'No additional note'}\n\nPlease confirm availability, phone condition, final price and advance terms before payment.`;window.location.href=waUrl(message);});
+    document.getElementById('cartCheckoutBtn').addEventListener('click',()=>{const user=loadUser();const lines=cart.map(i=>{const p=getProduct(i.id);return `${p.name} × ${i.qty} — ${money(p.price*i.qty)}`}).join('\n');const total=cart.reduce((n,i)=>n+getProduct(i.id).price*i.qty,0);window.open(waUrl(`Hello Mobi Mania! I want to enquire about these cart items:\n\n${lines}\n\nEstimated total: ${money(total)}\nCustomer: ${user?.name||'Not provided'}\n\nPlease confirm stock, condition and final price.`),'_blank','noopener');});
+    const exchangeBrandSelect=document.getElementById('exchangeBrand');
+    const exchangeBatteryWrap=document.getElementById('exchangeBatteryHealthWrap');
+    const exchangeBatterySelect=document.getElementById('exchangeBatteryHealth');
+    exchangeBrandSelect.addEventListener('change',()=>{const isApple=exchangeBrandSelect.value==='Apple';exchangeBatteryWrap.classList.toggle('hide',!isApple);exchangeBatterySelect.required=isApple;if(!isApple)exchangeBatterySelect.value='';});
+    document.getElementById('exchangeForm').addEventListener('submit',e=>{e.preventDefault();const brand=document.getElementById('exchangeBrand').value,model=document.getElementById('exchangeModel').value.trim(),condition=document.getElementById('exchangeCondition').value,storage=document.getElementById('exchangeStorage').value,batteryHealth=brand==='Apple'?exchangeBatterySelect.value:'';const normalized=(brand+' '+model).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const storageMatch=storage.match(/(64|128|256|512|1)\s*(tb|gb)/i);let storageGb=storageMatch?(storageMatch[2].toLowerCase()==='tb'?1024:Number(storageMatch[1])):128;let fixedBase=null,storageBase=128,isUltra=false;const iphoneMatch=normalized.match(/(?:iphone|i phone)\s*(11|12)\b/);const samsungMatch=normalized.match(/(?:galaxy\s*)?s\s*(20|21|22|23|24|25|26)\b/);if((brand==='Apple'||normalized.includes('iphone')||normalized.includes('i phone'))&&iphoneMatch){fixedBase=Number(iphoneMatch[1])===11?17000:19000;storageBase=128;}else if(brand==='Samsung'||normalized.includes('samsung')||normalized.includes('galaxy')){const sm=normalized.match(/(?:galaxy\s*)?s\s*(20|21|22|23|24|25|26)\b/);if(sm){const series=Number(sm[1]);isUltra=/\bultra\b/.test(normalized);const standardPrices={20:10000,21:12000,22:14000,23:16000,24:35000,25:70000,26:75000};const ultraPrices={22:40000,23:50000,24:65000,25:80000,26:90000};fixedBase=(isUltra?(ultraPrices[series]||standardPrices[series]):standardPrices[series]);storageBase=128;}}let exactPrice=null;if(fixedBase!==null&&['good','excellent'].includes(condition)){let storageExtra=storageGb<=64?-2000:storageGb<=128?0:storageGb<=256?2000:storageGb<=512?4000:9000;exactPrice=Math.max(0,fixedBase+storageExtra);if(condition==='excellent')exactPrice=Math.round(exactPrice*1.1/500)*500;if(isUltra&&exactPrice>90000)exactPrice=90000;if(brand==='Samsung'&&/s\s*26\b/.test(normalized)&&/\bultra\b/.test(normalized)&&storageGb===128&&condition==='excellent')exactPrice=90000;}let resultLow,resultHigh;if(exactPrice!==null){resultLow=resultHigh=exactPrice;}else{const bases={excellent:[8000,30000],good:[5000,22000],fair:[2000,12000],damaged:[500,5000]};const [low,high]=bases[condition]||[1000,10000];resultLow=Math.round(low/500)*500;resultHigh=Math.round(high/500)*500;}exchangeRequest={brand,model,condition,storage,batteryHealth,resultLow,resultHigh};const result=document.getElementById('estimateResult');result.innerHTML=`Illustrative estimate for <strong>${esc(brand)} ${esc(model)}</strong>:<br><strong>${resultLow===resultHigh?money(resultLow):money(resultLow)+' – '+money(resultHigh)}</strong><br><span style="font-size:.78rem">The actual amount depends on model age, market value and inspection.</span>`;result.classList.remove('hide');document.getElementById('exchangeWhatsAppBtn').classList.remove('hide');});
+    document.getElementById('exchangeWhatsAppBtn').addEventListener('click',()=>{if(!exchangeRequest)return;const x=exchangeRequest;const message=`Hello Mobi Mania! I'd like an exchange valuation.\n\nCurrent phone: ${x.brand} ${x.model}\nStorage: ${x.storage}\nCondition: ${x.condition}${x.batteryHealth?'\nApple battery health: '+x.batteryHealth:''}\nWebsite's illustrative range: ${money(x.resultLow)} – ${money(x.resultHigh)}\n\nPlease inspect and share your actual exchange offer.`;window.open(waUrl(message),'_blank','noopener')});
+    document.getElementById('yearNow').textContent=new Date().getFullYear();
+    // Apply all image paths from the IMAGE PATHS section above. Missing files safely fall back to placeholders.
+    const posterImg=document.getElementById('mmPosterImage');
+    const posterPlaceholder=document.getElementById('mmPosterPlaceholder');
+    if (posterImg && SHOP_POSTER_PATH) {
+      posterImg.src=SHOP_POSTER_PATH;
+      posterImg.hidden=false;
+      posterImg.addEventListener('load',()=>{if(posterImg.naturalWidth && posterPlaceholder) posterPlaceholder.hidden=true;});
+      posterImg.addEventListener('error',()=>{posterImg.hidden=true;if(posterPlaceholder)posterPlaceholder.hidden=false;});
+    }
+    Object.entries(CATEGORY_IMAGE_PATHS).forEach(([key,path])=>{
+      const img=document.getElementById('mmCategoryImage-'+key);
+      if(img && path) img.src=path;
+    });
+    const logoImg=document.getElementById('shopLogo'),footerLogo=document.getElementById('shopLogoFooter');
+    [logoImg,footerLogo].forEach(img=>{img.src=SHOP_LOGO_PATH;img.addEventListener('load',()=>{if(img.naturalWidth){img.hidden=false;const fallback=document.getElementById(img===logoImg?'logoFallback':'logoFooterFallback');if(fallback)fallback.hidden=true;}});img.addEventListener('error',()=>{img.hidden=true;});});
+    const locationQuery=SHOP_LOCATION_QUERY.trim();const mapQuery=encodeURIComponent(locationQuery);const shopMap=document.getElementById('shopMap');shopMap.src='https://maps.google.com/maps?q='+mapQuery+'&t=&z=15&ie=UTF8&iwloc=&output=embed';document.getElementById('openMapLink').href=SHOP_LOCATION_URL;document.getElementById('openMapLink').setAttribute('aria-label','Open the exact Mobi Mania shop location in Google Maps');
+    renderProducts();renderCartCount();updateAccountUI();
+
+    // Re-trigger visible, smooth reveal animations every time content enters/leaves the viewport.
+    const revealSelector = '.brand-tile, .product-card, .trust-card, .exchange-form-card, .related-item';
+    const revealTargets = new WeakSet();
+    let revealObserver;
+    function observeRevealTargets(root=document) {
+      root.querySelectorAll(revealSelector).forEach((el) => {
+        if (revealTargets.has(el)) return;
+        revealTargets.add(el);
+        el.classList.add('scroll-reveal');
+        if (el.matches('.brand-tile, .product-card, .trust-card, .related-item')) {
+          el.style.setProperty('--reveal-delay', '0ms');
+        }
+        if (revealObserver) revealObserver.observe(el);
+        else el.classList.add('is-visible');
+      });
+    }
+    if ('IntersectionObserver' in window) {
+      revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Reveal each card once. Keeping it visible prevents flicker when
+            // tapping a phone photo or when the viewport shifts slightly.
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.01, rootMargin: '0px 0px -2% 0px' });
+    }
+    observeRevealTargets();
+    // Product cards are rebuilt after searching/filtering, so observe new cards too.
+    const productGrid = document.getElementById('productGrid');
+    if (productGrid && 'MutationObserver' in window) {
+      new MutationObserver(() => observeRevealTargets(productGrid)).observe(productGrid, {childList:true, subtree:true});
+    }
+
+  </script>
+
+
+<style id="mobi-mania-performance-optimization">
+/* Performance-focused overrides: preserve the existing design and interactions. */
+html { scroll-behavior: smooth; }
+.scroll-reveal {
+  filter: none !important;
+  will-change: auto !important;
+  transition: opacity .32s ease, transform .32s ease !important;
+  transform: translate3d(0, 12px, 0) !important;
+}
+.scroll-reveal.is-visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+.brand-tile .brand-logo {
+  will-change: auto !important;
+  animation-duration: 4.5s !important;
+}
+img, video { backface-visibility: hidden; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+
+/* Avoid expensive blur and oversized shadows on compact/mobile devices. */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 110px; }
+  header, .modal, .popup, .glass, [class*="modal"], [class*="popup"] {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+  .scroll-reveal {
+    transition-duration: .28s !important;
+    transform: translate3d(0, 8px, 0) !important;
+  }
+  .scroll-reveal.is-visible { transform: translate3d(0, 0, 0) !important; }
+  .brand-tile .brand-logo { animation-duration: 5.5s !important; }
+  * { scroll-margin-top: 100px; }
+}
+
+/* Keep tablet layouts fluid without changing the desktop design. */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .container { width: min(100% - 32px, 1000px); }
+}
+
+/* Honor accessibility settings and prevent animation work when requested. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .scroll-reveal, .scroll-reveal.is-visible,
+  .brand-tile .brand-logo, .announcement-track {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+</style>
+
+<script id="mobi-mania-loading-optimization">
+/* Native lazy-loading for below-the-fold images; keep the first-screen logo eager. */
+(() => {
+  const optimizeMedia = () => {
+    const imgs = document.querySelectorAll('img:not([loading])');
+    imgs.forEach((img, index) => {
+      const inHeader = img.closest('header');
+      const inHero = img.closest('.hero, #hero, .hero-section');
+      if (inHeader || inHero || index < 2) {
+        img.loading = 'eager';
+        img.decoding = 'async';
+      } else {
+        img.loading = 'lazy';
+        img.decoding = 'async';
+      }
+    });
+    document.querySelectorAll('video').forEach(video => {
+      if (!video.hasAttribute('preload')) video.setAttribute('preload', 'metadata');
+    });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', optimizeMedia, { once: true });
+  } else {
+    optimizeMedia();
+  }
+})();
+</script>
+
+
+
+<style id="mobi-low-lag-performance-fix">
+/* Low-lag pass: preserve layout/features while reducing expensive mobile effects. */
+@media (max-width: 760px) {
+  /* Backdrop blur on many stacked cards/overlays is expensive on mobile GPUs. */
+  *, *::before, *::after { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+  /* Avoid blur filters during reveal/scroll and remove non-essential glow painting. */
+  .scroll-reveal, .scroll-reveal.is-visible { filter: none !important; transition: opacity .18s linear, transform .18s ease-out !important; transition-delay: 0ms !important; }
+  .brand-tile .brand-logo { animation: none !important; will-change: auto !important; }
+  .product-card, .product-visual, .product-visual img, .brand-tile, .filter-chip, .nav-btn { transition-duration: .12s !important; }
+  .product-card, .trust-card, .brand-tile, .exchange-form-card { box-shadow: 0 3px 10px rgba(0,0,0,.14) !important; }
+  .exchange-form-card { animation: none !important; }
+  #mobiBottomNav { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; box-shadow: 0 5px 16px rgba(0,0,0,.28) !important; }
+  #mobiOrdersOverlay { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+  #mobiOrdersOverlay .mobi-orders-card { box-shadow: 0 12px 32px rgba(0,0,0,.42) !important; }
+}
+/* Don't force GPU layers on every card; browsers can promote layers only when needed. */
+.product-card, .brand-tile, .trust-card { will-change: auto !important; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+</style>
+
+
+
+</body>
+</html>
+
+<style id="offer-video-16x9-reveal-fix">
+/* Keep the offer section layout intact; use a true 16:9 landscape video frame. */
+#offers .offer-player{
+  width:100%!important;
+  max-width:none!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:16 / 9!important;
+  padding:0!important;
+  margin:0!important;
+  overflow:hidden!important;
+  position:relative!important;
+  display:block!important;
+  border:0!important;
+  box-shadow:none!important;
+  background:#000!important;
+  contain:layout paint!important;
+}
+#offers .offer-player > video{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  display:block!important;
+  background:#000!important;
+  border:0!important;
+}
+#offers .offer-player video{transform:translateZ(0);backface-visibility:hidden;}
+/* Hide native controls and prevent taps from revealing or toggling them. */
+#offers .offer-player > video{pointer-events:none!important;-webkit-tap-highlight-color:transparent;}
+#offers .offer-player video::-webkit-media-controls,
+#offers .offer-player video::-webkit-media-controls-panel,
+#offers .offer-player video::-webkit-media-controls-play-button,
+#offers .offer-player video::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none!important;opacity:0!important;}
+/* Smooth, lightweight reveal for the offer section as it enters the viewport. */
+#offers .section-head,
+#offers .offer-layout{
+  opacity:0;
+  transform:translate3d(0,16px,0);
+  transition:opacity .55s ease-out, transform .55s cubic-bezier(.2,.75,.25,1);
+}
+#offers.mm-offers-visible .section-head,
+#offers.mm-offers-visible .offer-layout{
+  opacity:1;
+  transform:translate3d(0,0,0);
+}
+@media(max-width:760px){
+  #offers .offer-player{width:100%!important;aspect-ratio:16 / 9!important;}
+  #offers .offer-layout{gap:16px;}
+  #offers .section-head,#offers .offer-layout{transition-duration:.4s;}
+}
+@media(prefers-reduced-motion:reduce){
+  #offers .section-head,#offers .offer-layout{opacity:1;transform:none;transition:none;}
+}
+</style>
+<script id="offer-section-reveal">
+(()=> {
+  const section=document.getElementById('offers');
+  if(!section)return;
+  if(!('IntersectionObserver' in window)){section.classList.add('mm-offers-visible');return;}
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting)section.classList.add('mm-offers-visible');
+      else section.classList.remove('mm-offers-visible');
+    });
+  },{threshold:0.08,rootMargin:'0px 0px -4% 0px'});
+  observer.observe(section);
+})();
+</script>
+
+
+<style id="mobi-mania-android-modal-flicker-fix">
+/* Stabilize phone-detail opening on Android: avoid blur/backdrop compositing flashes. */
+.overlay {
+  background: rgba(5, 2, 12, .88) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  isolation: isolate !important;
+  transform: translateZ(0);
+}
+.overlay.open {
+  background: rgba(5, 2, 12, .88) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.dialog {
+  animation: none !important;
+  transform: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  background: linear-gradient(140deg, #462364, #140a20 58%, #2b0f43) !important;
+  opacity: 1 !important;
+  isolation: isolate !important;
+  backface-visibility: hidden;
+}
+.dialog::before, .dialog::after { animation: none !important; }
+/* Keep the phone image and its containing panel stable during modal repaint. */
+#detailOverlay .dialog,
+#detailOverlay .dialog-content,
+#detailOverlay .product-detail,
+#detailOverlay .detail-image {
+  animation: none !important;
+  transition: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+#detailOverlay .detail-image { background: #21132e !important; }
+#detailOverlay .detail-image img {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  backface-visibility: hidden;
+}
+/* Prevent a second reveal cycle when the browser viewport changes on tap. */
+.scroll-reveal, .scroll-reveal.is-visible {
+  filter: none !important;
+  transition-property: opacity, transform !important;
+}
+@media (max-width:760px) {
+  .overlay { padding: 8px !important; }
+  #detailOverlay .dialog { max-height: 96dvh !important; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .overlay, .dialog, #detailOverlay * { animation: none !important; transition: none !important; }
+}
+
+</style>
+<script id="mobi-mania-offer-reveal-one-way-fix">
+(()=>{
+ const section=document.getElementById('offers');
+ if(!section || !('IntersectionObserver' in window)) return;
+ const observer=new IntersectionObserver(entries=>{
+   entries.forEach(entry=>{
+     if(entry.isIntersecting){section.classList.add('mm-offers-visible');observer.unobserve(section);}
+   });
+ },{threshold:0.08});
+ observer.observe(section);
+})();
+</script>
+<script id="mobi-mania-offer-autoplay-fix">
+(()=>{
+  const startOfferVideo=()=>{
+    const video=document.getElementById('mobiOfferVideo');
+    if(!video) return;
+    // Muted inline playback is the most compatible autoplay mode on mobile browsers.
+    video.muted=true;
+    video.defaultMuted=true;
+    video.autoplay=true;
+    video.playsInline=true;
+    video.setAttribute('muted','');
+    video.setAttribute('autoplay','');
+    video.setAttribute('playsinline','');
+    video.setAttribute('webkit-playsinline','');
+    if(video.readyState >= 2 && !video.paused) return;
+    const attempt=video.play();
+    if(attempt && typeof attempt.catch==='function') attempt.catch(()=>{});
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',startOfferVideo,{once:true});
+  else startOfferVideo();
+  const video=document.getElementById('mobiOfferVideo');
+  if(video){
+    ['loadedmetadata','canplay','canplaythrough'].forEach(eventName=>video.addEventListener(eventName,startOfferVideo,{once:true}));
+    video.addEventListener('pause',()=>{ if(!document.hidden) { try { video.play().catch(()=>{}); } catch(e) {} } });
+    video.addEventListener('ended',()=>{ video.currentTime=0; startOfferVideo(); });
+  }
+  window.addEventListener('pageshow',startOfferVideo);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)startOfferVideo();});
+})();
+</script>
+
+
+<!-- Mobi Mania mobile bottom navigation: additive UI only; existing site features are preserved. -->
+<style id="mobi-bottom-navigation-styles">
+  @media (max-width:760px) {
+    body { padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px)) !important; }
+    #mobiBottomNav {
+      position:fixed; left:10px; right:10px; bottom:calc(9px + env(safe-area-inset-bottom, 0px)); z-index:999;
+      display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); align-items:end; gap:2px;
+      min-height:65px; padding:7px 6px 6px; border:1px solid rgba(216,180,254,.24); border-radius:21px;
+      background:rgba(22,14,32,.91); -webkit-backdrop-filter:blur(18px) saturate(145%); backdrop-filter:blur(18px) saturate(145%);
+      box-shadow:0 10px 32px rgba(0,0,0,.35), inset 0 1px rgba(255,255,255,.09);
+    }
+    #mobiBottomNav .bottom-nav-item { position:relative; display:flex; min-width:0; height:49px; padding:4px 1px 2px; gap:3px; flex-direction:column; justify-content:center; align-items:center; border:0; border-radius:13px; color:#c9bfd8; background:transparent; font:600 10px/1.1 inherit; cursor:pointer; text-decoration:none; -webkit-tap-highlight-color:transparent; transition:color .2s ease,background .2s ease,transform .2s ease; }
+    #mobiBottomNav .bottom-nav-item svg { width:21px; height:21px; flex:none; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+    #mobiBottomNav .bottom-nav-item.active { color:#e9caff; background:rgba(168,85,247,.14); }
+    #mobiBottomNav .bottom-nav-item:active { transform:scale(.94); }
+    #mobiBottomNav .bottom-nav-exchange { height:60px; margin-top:-18px; color:#fff; font-size:10px; font-weight:800; }
+    #mobiBottomNav .bottom-nav-exchange .exchange-icon { display:grid; place-items:center; width:47px; height:47px; margin-bottom:0; border:1px solid rgba(255,255,255,.38); border-radius:17px; color:#fff; background:linear-gradient(145deg,#c084fc,#7c3aed 65%,#5b21b6); box-shadow:0 5px 18px rgba(124,58,237,.45),inset 0 1px rgba(255,255,255,.35); }
+    #mobiBottomNav .bottom-nav-exchange svg { width:25px; height:25px; }
+    #mobiBottomNav .bottom-nav-exchange.active .exchange-icon { box-shadow:0 0 0 3px rgba(192,132,252,.18),0 5px 20px rgba(124,58,237,.5); }
+    #mobiBottomNav .bottom-nav-label { white-space:nowrap; }
+    #mobiBottomNav .bottom-nav-count { position:absolute; top:0; right:calc(50% - 23px); min-width:15px; height:15px; display:grid; place-items:center; padding:0 3px; border-radius:99px; color:#fff; background:#a855f7; border:1px solid #1c1228; font-size:9px; line-height:1; }
+    #mobiOrdersOverlay { position:fixed; inset:0; z-index:1001; display:none; align-items:center; justify-content:center; padding:18px; background:rgba(4,2,9,.76); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); }
+    #mobiOrdersOverlay.open { display:flex; }
+    #mobiOrdersOverlay .mobi-orders-card { width:min(100%,420px); max-height:82vh; overflow:auto; padding:23px; border:1px solid rgba(216,180,254,.3); border-radius:23px; color:#f6edff; background:linear-gradient(145deg,#2b1c39,#100a18); box-shadow:0 25px 80px #0009; }
+    #mobiOrdersOverlay h2 { margin:0 0 7px; font-size:1.35rem; }
+    #mobiOrdersOverlay p { color:#d5c7e4; font-size:.9rem; line-height:1.6; }
+    #mobiOrdersOverlay .mobi-orders-close { float:right; width:35px; height:35px; border:1px solid #ffffff30; border-radius:11px; color:#fff; background:#ffffff10; font-size:22px; }
+    #mobiOrdersOverlay .mobi-orders-actions { display:grid; gap:9px; margin-top:17px; }
+    #mobiOrdersOverlay .mobi-orders-actions button { padding:12px; border:1px solid #ffffff24; border-radius:12px; color:#fff; background:#ffffff0d; font-weight:750; }
+  }
+  @media (min-width:761px) { #mobiBottomNav, #mobiOrdersOverlay { display:none !important; } }
+  @media (prefers-reduced-motion:reduce) { #mobiBottomNav .bottom-nav-item { transition:none; } }
+</style>
+<nav id="mobiBottomNav" aria-label="Mobile quick navigation">
+  <button class="bottom-nav-item active" type="button" data-bottom-action="home" aria-label="Home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span class="bottom-nav-label">Home</span>
+  </button>
+  <button class="bottom-nav-item" type="button" data-bottom-action="cart" aria-label="Cart">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="bottom-nav-label">Cart</span><span class="bottom-nav-count" id="mobiBottomCartCount" hidden>0</span>
+  </button>
+  <button class="bottom-nav-item bottom-nav-exchange" type="button" data-bottom-action="exchange" aria-label="Exchange phone">
+    <span class="exchange-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h12l-3-3M17 17H5l3 3"/><path d="M19 7a7 7 0 0 1 1 8M5 17a7 7 0 0 1-1-8"/></svg></span><span class="bottom-nav-label">Exchange</span>
+  </button>
+  <button class="bottom-nav-item" type="button" data-bottom-action="profile" aria-label="Profile">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span class="bottom-nav-label">Profile</span>
+  </button>
+  <button class="bottom-nav-item" type="button" data-bottom-action="brand" aria-label="Shop by brand">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13 13 20a2 2 0 0 1-2.8 0L4 13V4h9l7 7a2 2 0 0 1 0 2Z"/><circle cx="8.5" cy="8.5" r="1.2"/></svg><span class="bottom-nav-label">Brand</span>
+  </button>
+</nav>
+<div id="mobiOrdersOverlay" role="dialog" aria-modal="true" aria-labelledby="mobiOrdersTitle">
+  <div class="mobi-orders-card"><button type="button" class="mobi-orders-close" id="mobiOrdersClose" aria-label="Close orders">×</button><h2 id="mobiOrdersTitle">Your Orders</h2><p>Phone bookings are currently confirmed directly with Mobi Mania through WhatsApp. This website does not yet have an online order-history system, so confirmed bookings will not automatically appear here.</p><div class="mobi-orders-actions"><button type="button" id="mobiOrdersBrowse">Browse phones</button><button type="button" id="mobiOrdersContact">Contact Mobi Mania on WhatsApp</button></div></div>
+</div>
+<script id="mobi-bottom-navigation-behavior">
+(()=>{
+  const nav=document.getElementById('mobiBottomNav'); if(!nav) return;
+  const items=[...nav.querySelectorAll('[data-bottom-action]')];
+  const setActive=(action)=>items.forEach(item=>{const on=item.dataset.bottomAction===action;item.classList.toggle('active',on);if(on)item.setAttribute('aria-current','page');else item.removeAttribute('aria-current');});
+  const closeOrders=()=>document.getElementById('mobiOrdersOverlay')?.classList.remove('open');
+  nav.addEventListener('click',event=>{
+    const button=event.target.closest('[data-bottom-action]'); if(!button)return;
+    const action=button.dataset.bottomAction;
+    if(action==='home'){setActive(action);document.getElementById('home')?.scrollIntoView({behavior:'smooth',block:'start'});}
+    else if(action==='cart'){setActive(action);if(typeof window.showCart==='function')window.showCart();else document.getElementById('cartBtn')?.click();}
+    else if(action==='exchange'){setActive(action);document.getElementById('exchange')?.scrollIntoView({behavior:'smooth',block:'start'});}
+    else if(action==='profile'){setActive(action);if(typeof window.openAccount==='function')window.openAccount();else document.getElementById('accountBtn')?.click();}
+    else if(action==='brand'){setActive(action);document.getElementById('brands')?.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+  document.getElementById('mobiOrdersClose')?.addEventListener('click',closeOrders);
+  document.getElementById('mobiOrdersOverlay')?.addEventListener('click',event=>{if(event.target.id==='mobiOrdersOverlay')closeOrders();});
+  document.getElementById('mobiOrdersBrowse')?.addEventListener('click',()=>{closeOrders();setActive('home');document.getElementById('products')?.scrollIntoView({behavior:'smooth',block:'start'});});
+  document.getElementById('mobiOrdersContact')?.addEventListener('click',()=>{const message=encodeURIComponent('Hello Mobi Mania! I want to check the status of my phone booking.');const link='https://wa.me/916290520530?text='+message;window.open(link,'_blank','noopener');});
+  const updateCount=()=>{const source=document.getElementById('cartCount'),badge=document.getElementById('mobiBottomCartCount');if(!source||!badge)return;const count=parseInt(source.textContent,10)||0;badge.textContent=count>99?'99+':String(count);badge.hidden=count===0;};
+  const countSource=document.getElementById('cartCount');if(countSource){new MutationObserver(updateCount).observe(countSource,{childList:true,subtree:true,characterData:true});}updateCount();
+  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeOrders();});
+  document.querySelectorAll('a[href="#home"]').forEach(link=>link.addEventListener('click',()=>setActive('home')));
+})();
+</script>
